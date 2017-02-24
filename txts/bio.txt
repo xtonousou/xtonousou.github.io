@@ -1,37 +1,37 @@
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat education
-  Undergraduate student at Technological Educational Institute of Western Greece
-  <strong id="strongWhite">Dept. of Computer &amp; Informatics Engineering</strong>
+&nbsp;Undergraduate student at Technological Educational Institute of Western Greece
+&nbsp;<strong id="strongWhite">Dept. of Computer &amp; Informatics Engineering</strong>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat skills
-  <ins>Operating Systems</ins>
-  <strong id="strongWhite">GNU/Linux</strong>, Mac OSX, <del>Windows</del>
-  <ins>Programming Languages</ins>
-  <strong id="strongWhite">Bash</strong>, Basic, <strong id="strongWhite">C/C++</strong>, <strong id="strongWhite">CSS</strong>, <strong id="strongWhite">HTML</strong>, <strong id="strongWhite">Java</strong>, <strong id="strongWhite">Javascript</strong>, Matlab, MySQL, Perl, PHP, <strong id="strongWhite">Python</strong>, Ruby
-  <ins>Platforms</ins>
-  <strong id="strongWhite">Android Studio</strong>
-  <strong id="strongWhite">Drupal</strong>, Joomla, Wordpress CMS
-  <del>Microsoft</del>/Libre Office
-  <ins>Other Technologies</ins>
-  <strong id="strongWhite">git VCS</strong>
-  jQuery
-  <ins>Miscellanea</ins>
-  3D Modelling w/ Blender, <strong id="strongWhite">Maxon Cinema 4D</strong>
-  Graphic Designing w/ <strong id="strongWhite">Adobe Photoshop</strong> &amp; GIMP
-  Video Editing w/ Adobe After Effects, <strong id="strongWhite">Sony Vegas</strong>
+&nbsp;<ins>Operating Systems</ins>
+&nbsp;<strong id="strongWhite">GNU/Linux</strong>, Mac OSX, <del>Windows</del>
+&nbsp;<ins>Programming Languages</ins>
+&nbsp;<strong id="strongWhite">Bash</strong>, Basic, <strong id="strongWhite">C/C++</strong>, <strong id="strongWhite">CSS</strong>, <strong id="strongWhite">HTML</strong>, <strong id="strongWhite">Java</strong>, <strong id="strongWhite">Javascript</strong>, Matlab, MySQL, Perl, PHP, <strong id="strongWhite">Python</strong>, Ruby
+&nbsp;<ins>Platforms</ins>
+&nbsp;<strong id="strongWhite">Android Studio</strong>
+&nbsp;<strong id="strongWhite">Drupal</strong>, Joomla, Wordpress CMS
+&nbsp;<del>Microsoft</del>/Libre Office
+&nbsp;<ins>Other Technologies</ins>
+&nbsp;<strong id="strongWhite">git VCS</strong>
+&nbsp;jQuery
+&nbsp;<ins>Miscellanea</ins>
+&nbsp;3D Modelling w/ Blender, <strong id="strongWhite">Maxon Cinema 4D</strong>
+&nbsp;Graphic Designing w/ <strong id="strongWhite">Adobe Photoshop</strong> &amp; GIMP
+&nbsp;Video Editing w/ Adobe After Effects, <strong id="strongWhite">Sony Vegas</strong>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat languages
-  <strong id="strongWhite">Greek</strong> - Native
-  <strong id="strongWhite">English</strong> - Professional working proficiency
-  <strong id="strongWhite">French</strong> - Elementary proficiency
+&nbsp;<strong id="strongWhite">Greek</strong> - Native
+&nbsp;<strong id="strongWhite">English</strong> - Professional working proficiency
+&nbsp;<strong id="strongWhite">French</strong> - Elementary proficiency
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat interests
-  <strong id="strongWhite">Android</strong>
-  Bioinformatics
-  Cloud Programming
-  Cyber Security
-  Data Mining
-  <strong id="strongWhite">Free &amp; Open Source Software</strong>
-  Networking
-  <strong id="strongWhite">System Administration</strong>
-  <strong id="strongWhite">Unix</strong>
-  Web Development
+&nbsp;<strong id="strongWhite">Android</strong>
+&nbsp;Bioinformatics
+&nbsp;Cloud Programming
+&nbsp;Cyber Security
+&nbsp;Data Mining
+&nbsp;<strong id="strongWhite">Free and Open Source Software</strong>
+&nbsp;Networking
+&nbsp;<strong id="strongWhite">System Administration</strong>
+&nbsp;<strong id="strongWhite">Unix</strong>
+&nbsp;Web Development
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>ls -laF
 total 8
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:28 <a id="dirLink" href="javascript:window.location.reload();">./</a>
