@@ -44,9 +44,9 @@ var Typer = {
   },
 
   //TODO popup is on top of the page and doesn't show is the page is scrolled
-  makeDenied: function() { //create Access Denied popUp
+  makeDenied: function() { // create Access Denied popUp
     Typer.hidepop(); // hide all popups
-    Typer.deniedCount = 0; //reset count
+    Typer.deniedCount = 0; // reset count
     var ddiv = $("<div id='deni'>").html(""); // create new blank div and id "deni"
     ddiv.addClass("accessDenied"); // add class to the div
     ddiv.html("<h1>ACCESS DENIED</h1>"); // set content of div
@@ -59,7 +59,7 @@ var Typer = {
     $("#gran").remove();
   },
  
-  addText: function(key) { //Main function to add the code
+  addText: function(key) { // main function to add the code
     if (key.keyCode == 18) { // key 18 = alt key
       Typer.accessCount++; // increase counter 
       if (Typer.accessCount >= 3) { // if it's presed 3 times
@@ -74,7 +74,7 @@ var Typer = {
       Typer.hidepop(); // hide all popups
     } else if (Typer.text) { // otherway if text is loaded
       var cont = Typer.content(); // get the console content
-      if (cont.substring(cont.length - 1, cont.length) == "|") // if the last char is the blinking cursor
+      if (cont.substring(cont.length - 1, cont.length) == "█") // if the last char is the blinking cursor
         $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it before adding the text
       if (key.keyCode != 8) { // if key is not backspace
         Typer.index += Typer.speed; // add to the index the speed
@@ -100,10 +100,10 @@ var Typer = {
  
   updLstChr: function() { // blinking cursor
     var cont = this.content(); // get console 
-    if (cont.substring(cont.length - 1, cont.length) == "|") // if last char is the cursor
+    if (cont.substring(cont.length - 1, cont.length) == "█") // if last char is the cursor
       $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it
     else
-      this.write("|"); // else write it
+      this.write("█"); // else write it
   }
 }
  
@@ -113,14 +113,14 @@ function replaceUrls(text) {
   var space = text.indexOf(".me ", http);
 
   if (space != -1) { 
-    var url = text.slice(http, space-1);
+    var url = text.slice(http, space - 1);
     return text.replace(url, "<a href=\""  + url + "\">" + url + "</a>");
   } else {
     return text;
   }
 }
 
-Typer.speed = 2;
+Typer.speed = 3;
 Typer.file = "xtonousou.txt";
 Typer.init();
  
