@@ -1,17 +1,17 @@
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>bash --login<br/><br/>
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>whoami<br/><br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>bash --login<br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>whoami<br/>
 xtonousou
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>gpg --fingerprint xtonousou<br/><br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>gpg --fingerprint xtonousou<br/>
 pub 4096R/A4C5AEA1 2017-02-24
 520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>pwd<br/><br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>pwd<br/>
 /Europe/Greece/Attiki/Athens
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>sort --stable /etc/locale.gen<br/><br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>sort --stable /etc/locale.gen<br/>
 el_GR.UTF-8 UTF-8
 en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 ja_JP.UTF-8 UTF-8
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>cat /etc/*-release<br/><br/>
+<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>cat /etc/*-release<br/>
 NAME="Arch Linux"
 PRETTY_NAME="Arch Linux"
 ID=arch
@@ -20,5 +20,5 @@ ANSI_COLOR="0;36"
 HOME_URL="https://www.archlinux.org/"
 SUPPORT_URL="https://bbs.archlinux.org/"
 BUG_REPORT_URL="https://bugs.archlinux.org/"
-<span id="a">[xtonousou</span>:<span id="b">~]</span><span id="c"> $ </span>exit<br/><br/>
+<span>[</span><span id="a">xtonousou</span>:<span id="b">~</span>]<span id="c"> $ </span>exit<br/>
 logout
