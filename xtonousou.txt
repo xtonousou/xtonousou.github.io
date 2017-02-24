@@ -27,7 +27,7 @@ total 24
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 04:20 <a id="dirLink" href="https://open.spotify.com/user/xtonousou/playlist/3Rq2xl2zybulL7rPcmzhEV">music/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 13:37 <a id="dirLink" href="https://github.com/xtonousou?tab=repositories">projects/</a>
 -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;30 Jul 19 19:24 <a href="https://twitter.com/xToNouSou">twitter</a>
--rw-r--r-- 1 xtonousou xtonousou 3167 Feb 24 21:14 <a href="https://twitter.com/xToNouSou">xtonousou-pubkey.asc</a>
+-rw-r--r-- 1 xtonousou xtonousou 3167 Feb 24 21:14 <a href="https://raw.githubusercontent.com/xtonousou/xtonousou.github.io/master/xtonousou-pubkey.asc">xtonousou-pubkey.asc</a>
 <span>[ </span><span id="username">xtonousou </span>: <span id="directory">~ </span>] <span id="shell">$ </span>exit
 logout
 <span>[ </span><span id="username">xtonousou </span>: <span id="directory">~ </span>] <span id="shell">$ </span>

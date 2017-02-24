@@ -4,7 +4,7 @@ body {
 
 #console {
   font-family: courier, monospace;
-  color: #A2A2A2;
+  color: #CACACA;
   width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -12,9 +12,13 @@ body {
   font-size: 14px;
 }
 
-#dirLink {
-  color: #282828;
+a {
+  color: #CACACA;
   text-decoration: none;
+}
+
+#dirLink {
+  color: #0F75BD;
 }
 
 #username {
