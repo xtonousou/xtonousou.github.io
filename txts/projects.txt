@@ -1,0 +1,29 @@
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>bash --login
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>whoami
+xtonousou
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>gpg --fingerprint xtonousou
+pub 4096R/A4C5AEA1 2017-02-24
+520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>pwd
+/Earth/Europe/Greece/Attiki/Athens
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>sort --stable /etc/locale.gen
+el_GR.UTF-8 UTF-8
+en_US.UTF-8 UTF-8
+fr_FR.UTF-8 UTF-8
+ja_JP.UTF-8 UTF-8
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>cat /etc/*-release
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+ID_LIKE=archlinux
+ANSI_COLOR="0;36"
+HOME_URL="https://www.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://bugs.archlinux.org/"
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>ls -lF
+total 12
+drwxrwxr-x 2 xtonousou xtonousou 4096 Apr 26 00:00 <a id="dirLink" href="/bio.html">bio/</a>
+drwxrwxr-x 2 xtonousou xtonousou 4096 Oct 28 19:40 <a id="dirLink" href="/contact.html">contact/</a>
+drwxrwxr-x 2 xtonousou xtonousou 4096 Feb 22 18:21 <a id="dirLink" href="/projects.html">projects/</a>
+-rw-r--r-- 1 xtonousou xtonousou 3167 Feb 24 21:14 <a href="https://raw.githubusercontent.com/xtonousou/xtonousou.github.io/master/xtonousou-pubkey.asc">xtonousou-pubkey.asc</a>
+<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>
