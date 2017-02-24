@@ -120,7 +120,7 @@ function replaceUrls(text) {
   }
 }
 
-Typer.speed = 3;
+Typer.speed = 2;
 Typer.file = "xtonousou.txt";
 Typer.init();
  
