@@ -22,12 +22,12 @@ SUPPORT_URL="https://bbs.archlinux.org/"
 BUG_REPORT_URL="https://bugs.archlinux.org/"
 <span>[ </span><span id="username">xtonousou </span>: <span id="directory">~ </span>] <span id="shell">$ </span>ls -lF
 total 24
-<pre>-rw-r--r-- 1 xtonousou xtonousou   35 Feb 12 01:44</pre> <a href="https://www.facebook.com/xtonousou">facebook</a>
-<pre>-rw-r--r-- 1 xtonousou xtonousou   29 Nov 25 13:12</pre> <a href="https://github.com/xtonousou">github</a>
-<pre>drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 04:20</pre> <a id="dirLink" href="https://open.spotify.com/user/xtonousou/playlist/3Rq2xl2zybulL7rPcmzhEV">music/</a>
-<pre>drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 13:37</pre> <a id="dirLink" href="https://github.com/xtonousou?tab=repositories">projects/</a>
-<pre>-rw-r--r-- 1 xtonousou xtonousou   30 Jul 19 19:24</pre> <a href="https://twitter.com/xToNouSou">twitter</a>
-<pre>-rw-r--r-- 1 xtonousou xtonousou 3167 Feb 24 21:14</pre> <a href="https://twitter.com/xToNouSou">xtonousou-pubkey.asc</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;35 Feb 12 01:44 <a href="https://www.facebook.com/xtonousou">facebook</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;29 Nov 25 13:12 <a href="https://github.com/xtonousou">github</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 04:20 <a id="dirLink" href="https://open.spotify.com/user/xtonousou/playlist/3Rq2xl2zybulL7rPcmzhEV">music/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 13:37 <a id="dirLink" href="https://github.com/xtonousou?tab=repositories">projects/</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;30 Jul 19 19:24 <a href="https://twitter.com/xToNouSou">twitter</a>
+-rw-r--r-- 1 xtonousou xtonousou 3167 Feb 24 21:14 <a href="https://twitter.com/xToNouSou">xtonousou-pubkey.asc</a>
 <span>[ </span><span id="username">xtonousou </span>: <span id="directory">~ </span>] <span id="shell">$ </span>exit
 logout
 <span>[ </span><span id="username">xtonousou </span>: <span id="directory">~ </span>] <span id="shell">$ </span>
