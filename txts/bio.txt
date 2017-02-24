@@ -1,36 +1,37 @@
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat education
-Undergraduate student at Technological Educational Institute of Western Greece, <strong>Dept. of Computer &amp; Informatics Engineering</strong>
+Undergraduate student at Technological Educational Institute of Western Greece
+<strong id="strongWhite">Dept. of Computer &amp; Informatics Engineering</strong>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat skills
 <ins>Operating Systems</ins>
-<strong>GNU/Linux</strong>, Mac OSX, <del>Windows</del>
+<strong id="strongWhite">GNU/Linux</strong>, Mac OSX, <del>Windows</del>
 <ins>Programming Languages</ins>
-<strong>Bash</strong>, Basic, <strong>C/C++</strong>, <strong>CSS</strong>, <strong>HTML</strong>, <strong>Java</strong>, <strong>Javascript</strong>, Matlab, MySQL, Perl, PHP, <strong>Python</strong>, Ruby
+<strong id="strongWhite">Bash</strong>, Basic, <strong id="strongWhite">C/C++</strong>, <strong id="strongWhite">CSS</strong>, <strong id="strongWhite">HTML</strong>, <strong id="strongWhite">Java</strong>, <strong id="strongWhite">Javascript</strong>, Matlab, MySQL, Perl, PHP, <strong id="strongWhite">Python</strong>, Ruby
 <ins>Platforms</ins>
-<strong>Android Studio</strong>
-<strong>Drupal</strong>, Joomla, Wordpress CMS
+<strong id="strongWhite">Android Studio</strong>
+<strong id="strongWhite">Drupal</strong>, Joomla, Wordpress CMS
 <del>Microsoft</del>/Libre Office
 <ins>Other Technologies</ins>
-<strong>git VCS</strong>
+<strong id="strongWhite">git VCS</strong>
 jQuery
 <ins>Miscellanea</ins>
-3D Modelling w/ Blender, <strong>Maxon Cinema 4D</strong>
-Graphic Designing w/ <strong>Adobe Photoshop</strong> &amp; GIMP
-Video Editing w/ Adobe After Effects, <strong>Sony Vegas</strong>
+3D Modelling w/ Blender, <strong id="strongWhite">Maxon Cinema 4D</strong>
+Graphic Designing w/ <strong id="strongWhite">Adobe Photoshop</strong> &amp; GIMP
+Video Editing w/ Adobe After Effects, <strong id="strongWhite">Sony Vegas</strong>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat languages
-<strong>Greek</strong> - Native
-<strong>English</strong> - Professional working proficiency
-<strong>French</strong> - Elementary proficiency
+<strong id="strongWhite">Greek</strong> - Native
+<strong id="strongWhite">English</strong> - Professional working proficiency
+<strong id="strongWhite">French</strong> - Elementary proficiency
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>cat interests
-<strong>Android</strong>
+<strong id="strongWhite">Android</strong>
 Bioinformatics
 Cloud Programming
 Cyber Security
 Data Mining
-<strong>Free &amp; Open Source Software</strong>
+<strong id="strongWhite">Free &amp; Open Source Software</strong>
 Networking
-<strong>System Administration</strong>
+<strong id="strongWhite">System Administration</strong>
 Web Development
-<strong>Unix</strong>
+<strong id="strongWhite">Unix</strong>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>ls -laF
 total 8
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:28 <a id="dirLink" href="javascript:window.location.reload();">./</a>
