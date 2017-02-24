@@ -1,10 +1,10 @@
 body {
-  background-color: #1A1A1A
+  background-color: #282828
 }
 
 #console {
   font-family: courier, monospace;
-  color: #E5E5E5;
+  color: #A2A2A2;
   width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -12,21 +12,21 @@ body {
   font-size: 14px;
 }
 
-a {
-  color: #00BBCC;
+#dirLink {
+  color: #282828;
   text-decoration: none;
 }
 
-#a {
-  color: #FF0000;
+#username {
+  color: #C20000;
   font-weight: bold;
 }
 
-#b {
-  color: #FF0096;
+#directory {
+  color: #C00071;
 }
 
-#c {
-  color: #00BBCC;
+#shell {
+  color: #69FF8F;
   font-weight: bold;
 }
