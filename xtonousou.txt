@@ -1,7 +1,7 @@
 <span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>bash --login
-<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>whoami<br/>
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>whoami
 xtonousou
-<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>gpg --fingerprint xtonousou<br/>
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>gpg --fingerprint xtonousou
 pub 4096R/A4C5AEA1 2017-02-24
 520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
 <span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>pwd<br/>
@@ -11,7 +11,7 @@ el_GR.UTF-8 UTF-8
 en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 ja_JP.UTF-8 UTF-8
-<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>cat /etc/*-release<br/>
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>cat /etc/*-release
 NAME="Arch Linux"
 PRETTY_NAME="Arch Linux"
 ID=arch
@@ -20,5 +20,12 @@ ANSI_COLOR="0;36"
 HOME_URL="https://www.archlinux.org/"
 SUPPORT_URL="https://bbs.archlinux.org/"
 BUG_REPORT_URL="https://bugs.archlinux.org/"
-<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>exit<br/>
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>ls -lF
+-rw-r--r-- 1 xtonousou xtonousou   35 Feb 12 01:44 <a href="https://www.facebook.com/xtonousou">facebook</a>
+-rw-r--r-- 1 xtonousou xtonousou   29 Nov 25 13:12 <a href="https://github.com/xtonousou">github</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 04:20 <a href="https://open.spotify.com/user/xtonousou/playlist/3Rq2xl2zybulL7rPcmzhEV">music/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 13:37 <a href="https://github.com/xtonousou?tab=repositories">projects/</a>
+-rw-r--r-- 1 xtonousou xtonousou   30 Jul 19 19:24 <a href="https://twitter.com/xToNouSou">twitter</a>
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>exit
 logout
+<span>[ </span><span id="a">xtonousou </span>: <span id="b">~ </span>] <span id="c">$ </span>
