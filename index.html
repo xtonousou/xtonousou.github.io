@@ -10,7 +10,14 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/typer.js"></script>
     <script>initTyper(3,'/txts/home.txt');</script>
-    
+    <script>
+      if (typeof initTyper(typingSpeed, textFile) === "true") {
+        $.getScript("/js/inject.js", function() {
+          console.log("Starting inject.js...");
+        });
+      }
+    </script>
+
     <link rel="stylesheet" type="text/css" href="/css/main.css"/>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico"/>
   </head>
