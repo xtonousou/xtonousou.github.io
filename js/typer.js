@@ -128,25 +128,25 @@ function initTyper(typingSpeed, textFile) {
 function changeDirectory(option) {
 
   if (option == "back")
-    Typer.text = "cd ../"; // save it in Typer.text
+    Typer.text = "cd ../ "; // save it in Typer.text
   else if (option == "current")
-    Typer.text = "cd ./"; // save it in Typer.text
+    Typer.text = "cd ./ "; // save it in Typer.text
 
+  Typer.text = Typer.text.slice(0, Typer.text.length - 1);
   if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
     $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
   $("#console").append(Typer.text);
 
   var timer2 = setInterval( function t2() {
-    if (Typer.text && Typer.index > Typer.text.length)
+    if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer2);
-  }, 35);
-
-  if (option == "back")
-    $("#console").html($("#console").html().substring(0, Typer.content().length - 6)); // clear before change directory
-  else if (option == "current")
-    $("#console").html($("#console").html().substring(0, Typer.content().length - 5)); // clear before change directory
-
-  Typer.updLstChr();
+      if (option == "back")
+        $("#console").html($("#console").html().substring(0, Typer.content().length - 6)); // clear before change directory
+      else if (option == "current")
+        $("#console").html($("#console").html().substring(0, Typer.content().length - 5)); // clear before change directory
+      Typer.updLstChr();
+    }
+  }, 150);
   
   return true;
 }
