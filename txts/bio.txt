@@ -37,5 +37,5 @@ Web Development
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>ls -laF
 total 8
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:28 <a id="dirLink" href="javascript:window.location.reload();">./</a>
-drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="dirLink" href="javascript:history.back();">../</a>
+drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="dirLink" onclick="/js/goBack.js">../</a>
 <span id="username">xtonousou</span>:<span id="directory">~/bio</span><span id="shell">$ </span>
