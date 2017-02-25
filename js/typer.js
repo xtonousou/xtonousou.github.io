@@ -135,7 +135,7 @@ function changeDirectory(command) {
 
   var timer2 = setInterval( function t2() {
     if (Typer.text && Typer.index > Typer.text.length)
-      clearInterval(timer);
+      clearInterval(timer2);
   }, 50);
   
   return true;
