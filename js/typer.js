@@ -121,6 +121,16 @@ function initTyper(typingSpeed, textFile) {
       clearInterval(timer);
   }, 35);
 }
+
+// command is a string like "cd ../" or "cd contact/"
+function changeDirectory(command) {
+
+  var timer = setInterval( function t() {
+    Typer.addText(command);
+    if (Typer.text && Typer.index > Typer.text.length)
+      clearInterval(timer);
+  }, 35);
+}
  
 function replaceUrls(text) {
   
