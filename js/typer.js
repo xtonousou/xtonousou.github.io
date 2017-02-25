@@ -119,3 +119,25 @@ function replaceUrls(text) {
     return text;
   }
 }
+
+function goBack() {
+  
+  Typer.speed = 2;
+  Typer.write("cd ../");
+  Typer.updLstChr();
+  setTimeout(function() {
+    console.log("Waiting 0.75 seconds...");
+  }, 750);
+  history.back();
+}
+
+function goCurrent() {
+  
+  Typer.speed = 2;
+  Typer.write("cd ./");
+  Typer.updLstChr();
+  setTimeout(function() {
+    console.log("Waiting 0.75 seconds...");
+  }, 750);
+  window.location.reload();
+}
