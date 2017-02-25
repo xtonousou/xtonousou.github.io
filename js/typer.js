@@ -82,7 +82,7 @@ var Typer = {
         if (Typer.index > 0) // else if index is not less than 0 
           Typer.index -= Typer.speed; //remove speed for deleting text
       }
-      var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html enities
+      var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html entities
       var rtn = new RegExp("\n", "g"); // newline regex
   
       $("#console").html(text.replace(rtn,"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
@@ -124,10 +124,14 @@ function initTyper(typingSpeed, textFile) {
   return true;
 }
 
-// command is a string like "cd ../" or "cd contact/"
-function changeDirectory(command) {
+// option is a string (back or current)
+function changeDirectory(option) {
 
-  Typer.text = command; // save the command in Typer.text
+  if (option == "back")
+    Typer.text = "cd ../"; // save it in Typer.text
+  else if (option == "current")
+    Typer.text = "cd ./"; // save it in Typer.text
+
   Typer.text = Typer.text.slice(0, Typer.text.length - 1);
   if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
     $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
