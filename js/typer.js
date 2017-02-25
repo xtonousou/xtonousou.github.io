@@ -91,7 +91,7 @@ var Typer = {
       }
       var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html entities
 
-      aler(Typer.index);
+      alert(Typer.index);
       if (text.slice(-1) == '<')
         speed = 6;
       else if (text.slice(-1) == '>')
