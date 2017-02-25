@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  color: #FF9347;
+  color: #7DFF7D;
 }
 
 #console {
@@ -22,24 +22,24 @@ a:hover {
 }
 
 #username {
-  color: #FF4D13;
+  color: #FF4B14;
 }
 
 #directory {
-  color: #FF5ABC;
+  color: #FF55B9;
 }
 
 #dirLink:hover {
-  color: #47FCFF;
+  color: #32FFFF;
 }
 
 #shell {
-  color: #69FF8F;
+  color: #64FF96;
   font-weight: bold;
 }
 
 #dirLink {
-  color: #0F75BD;
+  color: #0F7DC8;
 }
 
 #strongWhite {
