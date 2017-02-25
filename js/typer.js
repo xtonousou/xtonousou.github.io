@@ -131,6 +131,12 @@ function changeDirectory(command) {
   Typer.text = Typer.text.slice(0, Typer.text.length - 1);
   $("#console").append(Typer.text);
   Typer.updLstChr();
+
+  var timer2 = setInterval( function t2() {
+    Typer.addText({"KeyCode": 123748});
+    if (Typer.text && Typer.index > Typer.text.length)
+      clearInterval(timer);
+  }, 35);
   
   return true;
 }
