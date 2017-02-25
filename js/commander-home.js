@@ -1,4 +1,7 @@
-// must be called after typer.js
+// must be called after #console on the .html
+var url = window.location.pathname;
+var filename = url.substring(url.lastIndexOf('/') + 1);
+alert(filename);
 
 document.getElementById('cdh1').onclick = "appendCommand('cd bio/ '); window.location='/bio.html'";
 document.getElementById('cdh2').onclick = "appendCommand('cd contact/ '); window.location='/contact.html'";
