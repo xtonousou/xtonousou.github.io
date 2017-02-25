@@ -4,7 +4,7 @@ var Typer = {
   accessCountimer: null,
   
   index: 0, // current cursor position
-  speed: 3, // speed of the Typer
+  speed: 2, // speed of the Typer
   file: "", // file, must be setted
 
   accessCount: 0, // times alt is pressed for Access Granted
@@ -15,7 +15,7 @@ var Typer = {
     accessCountimer = setInterval(
       function() { // inizialize timer for blinking cursor
         Typer.updLstChr();
-      }, 500
+      }, 650
     );
     $.get(Typer.file, function(data) { // get the text file
       Typer.text = data; // save the textfile in Typer.text
@@ -119,34 +119,28 @@ function initTyper(typingSpeed, textFile) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length)
       clearInterval(timer);
-  }, 35);
+  }, 50);
 
   return true;
 }
 
-// option is a string (back or current)
-function changeDirectory(option) {
+// NOTE: if the text you want to append is "cd path/" pass "cd path/ " instead (an extra space)
+function appendCommand(command) {
 
-  if (option == "back")
-    Typer.text = "cd ../ "; // save it in Typer.text
-  else if (option == "current")
-    Typer.text = "cd ./ "; // save it in Typer.text
-
+  Typer.text = command; // save it in Typer.text
   Typer.text = Typer.text.slice(0, Typer.text.length - 1);
   if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
     $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
   $("#console").append(Typer.text);
+  window.scrollBy(0, 50); // scroll to make sure bottom is always visible
 
   var timer2 = setInterval( function t2() {
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer2);
-      if (option == "back")
-        $("#console").html($("#console").html().substring(0, Typer.content().length - 7)); // clear before change directory
-      else if (option == "current")
-        $("#console").html($("#console").html().substring(0, Typer.content().length - 6)); // clear before change directory
+      $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change directory
       Typer.updLstChr();
     }
-  }, 1000);
+  }, 1250);
   
   return true;
 }
