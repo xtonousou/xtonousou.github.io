@@ -38,7 +38,7 @@ a:hover {
   color: #0F7DC8;
 }
 
-#cd, #cdh1, #cdh2, #cdh3:hover {
+#cd:hover, #cdh1:hover, #cdh2:hover, #cdh3:hover {
   color: #32FFFF;
 }
 
