@@ -107,15 +107,6 @@ var Typer = {
   }
 }
 
-// work to be done inside the setInterval() function inside initTyper()
-function timerWorkload() {
-  
-  Typer.addText({"keyCode": 123748});
-  if (Typer.text && Typer.index > Typer.text.length) {
-    clearInterval(timer);
-  }
-}
-
 // typingSpeed is an integer
 // textFile is the path to .txt file "/txts/smth.txt"
 function initTyper(typingSpeed, textFile) {
@@ -124,7 +115,11 @@ function initTyper(typingSpeed, textFile) {
   Typer.file = textFile;
   Typer.init();
 
-  var timer = setInterval("timerWorkload();", 35);
+  var timer = setInterval( function t() {
+    Typer.addText({"KeyCode": 123748});
+    if (Typer.text && Typer.index > Typer.text.length)
+      clearInterval(timer);
+  }, 35);
 }
  
 function replaceUrls(text) {
