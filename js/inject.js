@@ -14,21 +14,11 @@ switch (document.title) {
     distro.href = "https://www.archlinux.org";
     publickey.href = "/xtonousou-pubkey.asc";
 
-    bio.onclick = function() {
-      appendCommand('cd bio/ ');
-    }
-    contact.onclick = function() {
-      appendCommand('cd contact/ ');
-    }
-    projects.onclick = function() {
-      appendCommand('cd projects/ ');
-    }
-    distro.onclick = function() {
-      appendCommand('$BROWSER https://www.archlinux.org ');
-    }
-    publickey.onclick = function() {
-      appendCommand('wget -q /xtonousou-pubkey.asc ');
-    }
+    bio.onclick = function() { appendCommand('cd bio/ '); }
+    contact.onclick = function() { appendCommand('cd contact/ '); }
+    projects.onclick = function() { appendCommand('cd projects/ '); }
+    distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
+    publickey.onclick = function() { appendCommand('wget -q /xtonousou-pubkey.asc '); }
     
     break;
   case "/home/xtonousou/bio":
