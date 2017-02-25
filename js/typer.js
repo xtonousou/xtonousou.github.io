@@ -87,7 +87,7 @@ var Typer = {
         Typer.index += Typer.speed; // add to the index the speed
       } else {
         if (Typer.index > 0) // else if index is not less than 0 
-          Typer.index -= Typer.speed; //remove speed for deleting text
+          Typer.index -= Typer.speed; // remove speed for deleting text
       }
 
       var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html enities
@@ -129,14 +129,12 @@ function initTyper(typingSpeed, textFile) {
     }
   }, 50);
 
-  alert(Typer.text);
-  alert(Typer.index);
-  alert(Typer.text.length);
-    
-  //$.getScript("/js/inject.js", function() {
-  //  console.log("Starting inject.js...");
-  //});
-
+  if (Typer.text && Typer.index > Typer.text.length) {
+    $.getScript("/js/inject.js", function() {
+      console.log("Starting inject.js...");
+    });
+  }
+  
   return true;
 }
 
