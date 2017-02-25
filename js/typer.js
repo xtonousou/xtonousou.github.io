@@ -26,12 +26,12 @@ var Typer = {
  
   content: function() {
     
-    return $("#c").html(); // get console content
+    return $("#console").html(); // get console content
   },
  
   write: function(str) { // append to console content
     
-    $("#c").append(str);
+    $("#console").append(str);
     return false;
   },
 
@@ -82,7 +82,7 @@ var Typer = {
     } else if (Typer.text) { // otherway if text is loaded
       var cont = Typer.content(); // get the console content
       if (cont.substring(cont.length - 1, cont.length) == "_") // if the last char is the blinking cursor
-        $("#c").html($("#c").html().substring(0, cont.length - 1)); // remove it before adding the text
+        $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it before adding the text
       if (key.keyCode != 8) { // if key is not backspace
         Typer.index += Typer.speed; // add to the index the speed
       } else {
@@ -90,7 +90,7 @@ var Typer = {
           Typer.index -= Typer.speed; //remove speed for deleting text
       }
   
-      $("#c").html(text.replace(new RegExp("\n", "g"),"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
+      $("#console").html(text.replace(new RegExp("\n", "g"),"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
       window.scrollBy(0, 50); // scroll to make sure bottom is always visible
     }
     
@@ -107,7 +107,7 @@ var Typer = {
     
     var cont = this.content(); // get console 
     if (cont.substring(cont.length - 1, cont.length) == "_") // if last char is the cursor
-      $("#c").html($("#c").html().substring(0, cont.length - 1)); // remove it
+      $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it
     else
       this.write("_"); // else write it
   }
@@ -136,14 +136,14 @@ function appendCommand(command) {
   Typer.text = command; // save it in Typer.text
   Typer.text = Typer.text.slice(0, Typer.text.length - 1);
   if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
-    $("#c").html($("#c").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
-  $("#c").append(Typer.text);
+    $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
+  $("#console").append(Typer.text);
   window.scrollBy(0, 50); // scroll to make sure bottom is always visible
 
   var timer2 = setInterval( function t2() {
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer2);
-      $("#c").html($("#c").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change directory
+      $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change directory
       Typer.updLstChr();
     }
   }, 750);
