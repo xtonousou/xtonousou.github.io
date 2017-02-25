@@ -92,9 +92,9 @@ var Typer = {
       
       var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html entities
       if (text.slice(-1) == '<')
-        Typer.index += Typer.speed + 13;
+        Typer.index += Typer.speed + 20;
       else if (text.slice(-1) == '>')
-        Typer.index -= Typer.speed - 13;
+        Typer.index -= Typer.speed - 20;
   
       $("#console").html(text.replace(new RegExp("\n", "g"),"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
       window.scrollBy(0, 50); // scroll to make sure bottom is always visible
