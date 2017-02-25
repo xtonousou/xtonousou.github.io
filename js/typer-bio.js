@@ -1,3 +1,3 @@
-Typer.speed = 4;
+Typer.speed = 8;
 Typer.file = "/txts/bio.txt";
 Typer.init();
