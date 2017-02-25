@@ -141,12 +141,12 @@ function changeDirectory(option) {
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer2);
       if (option == "back")
-        $("#console").html($("#console").html().substring(0, Typer.content().length - 6)); // clear before change directory
+        $("#console").html($("#console").html().substring(0, Typer.content().length - 7)); // clear before change directory
       else if (option == "current")
-        $("#console").html($("#console").html().substring(0, Typer.content().length - 5)); // clear before change directory
+        $("#console").html($("#console").html().substring(0, Typer.content().length - 6)); // clear before change directory
       Typer.updLstChr();
     }
-  }, 150);
+  }, 1000);
   
   return true;
 }
