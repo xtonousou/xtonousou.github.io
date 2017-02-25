@@ -4,7 +4,7 @@ var Typer = {
   accessCountimer: null,
   
   index: 0, // current cursor position
-  speed: 2, // speed of the Typer
+  speed: 3, // speed of the Typer
   file: "", // file, must be setted
 
   accessCount: 0, // times alt is pressed for Access Granted
@@ -120,16 +120,19 @@ function initTyper(typingSpeed, textFile) {
     if (Typer.text && Typer.index > Typer.text.length)
       clearInterval(timer);
   }, 35);
+
+  return true;
 }
 
 // command is a string like "cd ../" or "cd contact/"
 function changeDirectory(command) {
 
-  var timer = setInterval( function t() {
-    Typer.addText(command);
-    if (Typer.text && Typer.index > Typer.text.length)
-      clearInterval(timer);
-  }, 35);
+  Typer.text = command; // save the command in Typer.text
+  Typer.text = Typer.text.slice(0, Typer.text.length - 1);
+  $("#console").append(Typer.text);
+  Typer.updLstChr();
+  
+  return true;
 }
  
 function replaceUrls(text) {
