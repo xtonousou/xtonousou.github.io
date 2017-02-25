@@ -125,18 +125,19 @@ function initTyper(typingSpeed, textFile) {
   var timer = setInterval( function t() {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
-      console.log("in the interval");
       clearInterval(timer);
-      console.log("cleared interval");
     }
   }, 50);
-    
-  console.log("out of the interval");
-  $.getScript("/js/inject.js", function() {
-    console.log("Starting inject.js...");
-  });
 
-  return false;
+  alert(Typer.text);
+  alert(Typer.index);
+  alert(Typer.text.length);
+    
+  //$.getScript("/js/inject.js", function() {
+  //  console.log("Starting inject.js...");
+  //});
+
+  return true;
 }
 
 // NOTE: if the text you want to append is "cd path/" pass "cd path/ " instead (an extra space)
