@@ -116,12 +116,12 @@ function timerWorkload() {
   }
 }
 
-// speed is an integer
-// file is the path to .txt file "/txts/smth.txt"
-function initTyper(speed, file) {
+// typingSpeed is an integer
+// textFile is the path to .txt file "/txts/smth.txt"
+function initTyper(typingSpeed, textFile) {
 
-  Typer.speed = speed;
-  Typer.file = file;
+  Typer.speed = typingSpeed;
+  Typer.file = textFile;
   Typer.init();
 
   var timer = setInterval("timerWorkload();", 35);
