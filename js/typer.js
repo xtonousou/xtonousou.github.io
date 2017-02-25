@@ -125,9 +125,12 @@ function initTyper(typingSpeed, textFile) {
   var timer = setInterval( function t() {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
+      console.log("in the interval");
       clearInterval(timer);
+      console.log("cleared interval");
     }
   }, 50);
+  console.log("out of the interval");
 
   return true;
 }
