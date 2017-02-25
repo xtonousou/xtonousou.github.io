@@ -3,8 +3,12 @@ body {
 }
 
 a {
-  color: #CACACA;
+  color: #C2C2C2;
   text-decoration: none;
+}
+
+a:hover {
+  color: #FF9347;
 }
 
 #console {
@@ -18,11 +22,15 @@ a {
 }
 
 #username {
-  color: #FF4B35;
+  color: #FF4D13;
 }
 
 #directory {
-  color: #CF4A99;
+  color: #FF5ABC;
+}
+
+#dirLink:hover {
+  color: #47FCFF;
 }
 
 #shell {
