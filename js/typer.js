@@ -119,19 +119,3 @@ function replaceUrls(text) {
     return text;
   }
 }
-
-function goBack() {
-  
-  Typer.write("cd ../");
-  Typer.updLstChr();
-  setTimeout(function s() { console.log('back'); }, 2500);
-  history.back();
-}
-
-function goCurrent() {
-  
-  Typer.write("cd ./");
-  Typer.updLstChr();
-  setTimeout(function s() { console.log('back'); }, 2500);
-  window.location.reload();
-}
