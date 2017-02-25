@@ -130,9 +130,13 @@ function initTyper(typingSpeed, textFile) {
       console.log("cleared interval");
     }
   }, 50);
+    
   console.log("out of the interval");
+  $.getScript("/js/inject.js", function() {
+    console.log("Starting inject.js...");
+  });
 
-  return true;
+  return false;
 }
 
 // NOTE: if the text you want to append is "cd path/" pass "cd path/ " instead (an extra space)
@@ -153,5 +157,5 @@ function appendCommand(command) {
     }
   }, 750);
   
-  return true;
+  return false;
 }
