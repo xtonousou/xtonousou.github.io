@@ -1,19 +1,19 @@
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>bash --login
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>whoami
-  xtonousou: Sotirios M. Roussis
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>gpg --fingerprint xtonousou
-  pub 4096R/A4C5AEA1 2017-02-24
-  520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>locate xtonousou-pubkey.asc
-  <a onclick="appendCommand('wget -q /xtonousou-pubkey.asc ');" href="/xtonousou-pubkey.asc">https://xtonousou.github.io/xtonousou-pubkey.asc</a>
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>pwd
-  /Earth/Europe/Greece/Attiki/Athens
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>cat &#60; distro.sh
-  #!/usr/bin/env bash
-  echo "<a onclick="appendCommand('$BROWSER https://www.archlinux.org ');" href="https://www.archlinux.org">Arch Linux</a>"
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>ls -lF
-  total 12
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="dirLink" onclick="appendCommand('cd bio/ ');" href="/bio.html">bio/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="dirLink" onclick="appendCommand('cd contact/ ');" href="/contact.html">contact/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd projects/ ');" href="/projects.html">projects/</a>
-<span id="username">xtonousou</span>:<span id="directory">~</span><span id="shell">$ </span>
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>bash --login
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>whoami
+xtonousou: Sotirios M. Roussis
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>gpg --fingerprint xtonousou
+pub 4096R/A4C5AEA1 2017-02-24
+520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>locate xtonousou-pubkey.asc
+<a id="pk">https://xtonousou.github.io/xtonousou-pubkey.asc</a>
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>pwd
+/Earth/Europe/Greece/Attiki/Athens
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>cat &#60; distro.sh
+#!/usr/bin/env bash
+echo "<a id="al">Arch Linux</a>"
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>ls -lF
+total 12
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1">bio/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdh2">contact/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdh3">projects/</a>
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>

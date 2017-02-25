@@ -11,7 +11,7 @@ a:hover {
   color: #7DFF7D;
 }
 
-#console {
+#c {
   font-family: courier, monospace;
   color: #C2C2C2;
   width: 750px;
@@ -21,28 +21,28 @@ a:hover {
   font-size: 14px;
 }
 
-#username {
+#u {
   color: #FF4B14;
 }
 
-#directory {
+#d {
   color: #FF55B9;
 }
 
-#dirLink:hover {
-  color: #32FFFF;
-}
-
-#shell {
+#s {
   color: #64FF96;
   font-weight: bold;
 }
 
-#dirLink {
+#cd, #cdh1, #cdh2, #cdh3 {
   color: #0F7DC8;
 }
 
-#strongWhite {
+#cd, #cdh1, #cdh2, #cdh3:hover {
+  color: #32FFFF;
+}
+
+#w {
   color: #FFFFFF;
   font-weight: bolder;
 }

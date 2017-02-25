@@ -1,10 +1,10 @@
-<span id="username">xtonousou</span>:<span id="directory">~/projects</span><span id="shell">$ </span>ls -laF
-  total 28
-  drwxr-xr-- 7 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd ./ ');" href="javascript:window.location.reload();">./</a>
-  drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="dirLink" onclick="appendCommand('cd ../ ');" href="/index.html">../</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd airgeddon/ ');" href="https://github.com/v1s1t0r1sh3r3/airgeddon">airgeddon/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd madubi/ ');" href="https://github.com/xtonousou/madubi">madubi/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd .scripts/ ');" href="https://github.com/xtonousou/.scripts">.scripts/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd shIP/ ');" href="https://github.com/xtonousou/shIP">shIP/</a>
-  drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="dirLink" onclick="appendCommand('cd xSoundBoardHD/ ');" href="https://github.com/xtonousou/xSoundBoardHD">xSoundBoardHD/</a>
-<span id="username">xtonousou</span>:<span id="directory">~/projects</span><span id="shell">$ </span>
+<span id="u">xtonousou</span>:<span id="d">~/projects</span><span id="s">$ </span>ls -laF
+total 28
+drwxr-xr-- 7 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="javascript:window.location.reload();">./</a>
+drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cd" href="/index.html">../</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="https://github.com/v1s1t0r1sh3r3/airgeddon">airgeddon/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="https://github.com/xtonousou/madubi">madubi/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="https://github.com/xtonousou/.scripts">.scripts/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="https://github.com/xtonousou/shIP">shIP/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cd" href="https://github.com/xtonousou/xSoundBoardHD">xSoundBoardHD/</a>
+<span id="u">xtonousou</span>:<span id="d">~/projects</span><span id="s">$ </span>
