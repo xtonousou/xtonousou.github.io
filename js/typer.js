@@ -140,7 +140,7 @@ function appendCommand(command) {
       $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change directory
       Typer.updLstChr();
     }
-  }, 1250);
+  }, 750);
   
   return true;
 }
