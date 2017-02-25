@@ -10,6 +10,8 @@ function goBack() {
       clearInterval(timer);
     }
   }
-  w8();
+  setTimeout(function() {
+    console.log("Waiting 0.75 seconds...");
+  }, 750);
   history.back();
 }
