@@ -129,14 +129,14 @@ function changeDirectory(command) {
 
   Typer.text = command; // save the command in Typer.text
   Typer.text = Typer.text.slice(0, Typer.text.length - 1);
+  if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
+    $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
   $("#console").append(Typer.text);
-  Typer.updLstChr();
 
   var timer2 = setInterval( function t2() {
-    Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length)
       clearInterval(timer);
-  }, 35);
+  }, 50);
   
   return true;
 }
