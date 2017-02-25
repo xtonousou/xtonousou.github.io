@@ -4,8 +4,7 @@ var Typer = {
   accessCountimer: null,
   
   index: 0,     // current cursor position
-  speed: 3,     // speed of the Typer
-  speedTags: 5, // speed of the Typer when there are HTML tags
+  speed: 1,     // speed of the Typer
   file: "",     // file, must be setted
 
   accessCount: 0, // times alt is pressed for Access Granted
@@ -92,7 +91,10 @@ var Typer = {
       }
       var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html entities
 
-      alert(text);
+      if (text.slice(-1) == '<')
+        speed = 6;
+      else if (text.slice(-1) == '>')
+        speed = 1;
   
       $("#console").html(text.replace(new RegExp("\n", "g"),"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
       window.scrollBy(0, 50); // scroll to make sure bottom is always visible
@@ -118,12 +120,10 @@ var Typer = {
 }
 
 // typingSpeed is an integer
-// typingSpeedTags is an integer too
 // textFile is the path to .txt file "/txts/smth.txt"
-function initTyper(typingSpeed, typingSpeedTags, textFile) {
+function initTyper(typingSpeed, textFile) {
 
   Typer.speed = typingSpeed;
-  Typer.speedTags = typingSpeedTags;
   Typer.file = textFile;
   Typer.init();
 
