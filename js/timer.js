@@ -1,4 +1,4 @@
-var timer = setInterval("t();", 30);
+var timer = setInterval("t();", 35);
 function t() {
   
   Typer.addText({"keyCode": 123748});
