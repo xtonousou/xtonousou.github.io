@@ -1,53 +1,203 @@
-#console {
-  font-family: courier, monospace;
-  background-color: #000000;
-  color: #C2C2C2;
-  font-size: 13px;
-  padding: 4em;
+@import url(http://fonts.googleapis.com/css?family=Asap);
+
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
+/* The container that defines the dimenions of the monitor - used in media queries */
+.container {
+  width: 900px;
+  height: 525px;
+  margin: 0 auto;
+}
+
+/* Black monitor outline */
 .monitor {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  height: 300px;
-  overflow-y: scroll;
-  border: solid 1em #333;
-  border-radius: .5em;
+  padding: 4%;
+  position:relative;
+  background: #333333;
+  border-radius: 10px;
+  height: 100%;
 }
 
-.monitor::-webkit-scrollbar {
-  width: 15px;
-}
-
-.monitor::-webkit-scrollbar-thumb {
-  background: #666666;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #585858;
-}
-
-.stand:before {
+/* Camera on top of the monitor */
+.monitor:before {
   content: "";
   display: block;
-  position: relative;
-  background: #222222;
-  width: 150px;
-  height: 50px;
-  top: 382px;
-  left: 185px;
+  background: #E6E9ED;
+  position: absolute;
+  padding: 0.8%;
+  margin-right: -0.4%;
+  border-radius: 50%;
+  right: 50%;
+  top: 1.8%;
 }
 
-.stand:after {
-   content: "";
-   display: block;
-   position: relative;
-   background: #333333;
-   border-top-left-radius: .5em;
-   border-top-right-radius: .5em;
-   width: 300px;
-   height: 15px;
-   top: 50px;
-   left: 110px;
+/* Power button on the bottom of monitor */
+.monitor:after {
+  content: "";
+  display: block;
+  background: #AAB2BD;
+  position: absolute;
+  padding: 1%;
+  border-radius: 10%;
+  right: 4%;
+  bottom: 1.5%;
+}
+
+/* The container of the content */
+.screen {
+  height: 100%;
+  /*overflow: hidden; /* so that scroll bar is hidden */
+}
+
+/* Scrollable section inside the screen */
+.content {
+  height: 100%;
+  width: calc(100% + 17px); /* 17px for scroll bar */
+  overflow-y: scroll;
+  position: relative;
+}
+
+.screen:after {
+  content:'';
+  display: block;
+  height: 88%;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 6%;
+  width: 4%;
+}
+
+.content {
+  background-color: #000000;
+}
+
+/* Image on the screen */
+#console {
+  font-family: courier, monospace;
+  color: #C2C2C2;
+  font-size: 13px;
+  padding: 2em;
+}
+
+/* Stand */
+.monitor-stand {
+  position: relative;
+  margin: 0 auto;
+  height: 10%;
+  width: 20%;
+  background: #333333;
+}
+
+/* Shadow on stand - have to set manually since border-top doesn't support % :( */
+.monitor-stand {
+  border-top: 10px solid #4E4E4E;
+}
+
+/* Bottom of stand */
+.monitor-stand:after {
+  content: '';
+  position: absolute;
+  background: #272727;
+  height: 20%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: 29%;
+  border-radius: 5px;
+}
+
+
+
+/* 1200px and less ------------------------------ */
+@media (max-width: 1200px) {
+  body {
+    background: #5D9CEC;
+  }
+
+  .container {
+    width: 800px;
+    height: 466px;
+  }
+
+  .container:hover {
+    width: 820px;
+    height: 477px;
+  }
+
+  .monitor-stand {
+    border-top: 20px solid #D1D3D6;
+  }
+}
+
+/* 992px and less ------------------------------ */
+@media (max-width: 992px) {
+  body {
+    background: #2ecc71;
+  }
+
+  .container {
+    width: 600px;
+    height: 350px;
+  }
+
+  .container:hover {
+    width: 615px;
+    height: 358px;
+  }
+
+  .monitor-stand {
+    border-top: 15px solid #D1D3D6;
+  }
+}
+
+/* 768px and less ------------------------------ */
+@media (max-width: 768px) {
+  body {
+    background: #AC92EC ;
+  }
+
+  .container,
+  .container:hover {
+    width: 450px;
+    height: 262px;
+  }
+
+  .monitor-stand {
+    border-top: 12px solid #D1D3D6;
+  }
+}
+
+/* 480px and less ------------------------------ */
+@media (max-width: 480px) {
+  body {
+    background: #FFCE54 ;
+  }
+
+  .container,
+  .container:hover {
+    width: 300px;
+    height: 175px;
+  }
+
+  .monitor-stand {
+    border-top: 8px solid #D1D3D6;
+  }
+}
+
+/* 320px and less ------------------------------ */
+@media (max-width: 320px) {
+  body {
+    background: #ED5565;
+  }
+
+  span {
+    display: none;
+  }
+
+  .oops {
+    display: block;
+  }
 }
