@@ -13,10 +13,9 @@ switch (document.title) {
     projects.href = "/projects.html";
     distro.href = "https://www.archlinux.org";
     publickey.href = "/xtonousou-pubkey.asc";
-//appendCommand('cd bio/ ');
-//appendCommand('cd contact/ ');
-    bio.onclick = function() { alert(1); };
-    contact.onclick = function() { alert(2); }
+
+    bio.addEventListener("click", function() { appendCommand('cd bio/ '); });
+    contact.onclick = function() { appendCommand('cd contact/ '); }
     projects.onclick = function() { appendCommand('cd projects/ '); }
     distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
     publickey.onclick = function() { appendCommand('wget -q /xtonousou-pubkey.asc '); }
