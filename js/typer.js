@@ -129,15 +129,6 @@ var Typer = {
         Typer.updLstChr();
       }
     }, 750);
-  },
-
-  ready: function() {
-    var timer3 = setInterval( function t3() {
-      if (Typer.text && Typer.index > Typer.text.length) {
-        clearInterval(timer3);
-        return true;
-      }
-    }, 10);
   }
 }
 
@@ -148,4 +139,10 @@ function initTyper(typingSpeed, textFile) {
   Typer.speed = typingSpeed;
   Typer.file = textFile;
   Typer.init();
+  
+  var timer = setInterval( function() {
+    Typer.addText({"KeyCode": 123748});
+    if (Typer.text && Typer.index > Typer.text.length)
+      clearInterval(timer);
+  }, 30);
 }
