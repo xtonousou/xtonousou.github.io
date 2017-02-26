@@ -147,7 +147,7 @@ function initTyper(typingSpeed, textFile) {
       clearInterval(timer);
       $.getScript("/js/inject.js", function() {
 -        console.log("Started inject.js...");
--      });
+-     });
     }
   }, 30);
 }
