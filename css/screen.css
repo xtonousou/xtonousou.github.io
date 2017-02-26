@@ -53,19 +53,6 @@
   position: relative;
 }
 
-.content::-webkit-scrollbar {
-  width: 17px;
-}
-
-.content::-webkit-scrollbar-thumb {
-  background: #545454;
-  border-radius: 25%;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #888;
-}
-
 .screen:after {
   content: '';
   display: block;
