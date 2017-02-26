@@ -5,7 +5,7 @@ switch (document.title) {
     var projects = document.getElementById('cdh3');
     var distro = document.getElementById('al');
     var publickey = document.getElementById('pk');
-    var bioEv = 'onclick = "Typer.append('cd bio/ ');"'
+    var bioEv = $('onclick = "Typer.append('cd bio/ ');"');
 
     $('#cdh1').append(bioEv);
 
