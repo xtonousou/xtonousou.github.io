@@ -15,10 +15,10 @@ switch (document.title) {
     publickey.href = "/xtonousou-pubkey.asc";
 
     bio.onclick = function() { alert(1); appendCommand('cd bio/ '); }
-    contact.onclick = function() { appendCommand('cd contact/ '); }
-    projects.onclick = function() { appendCommand('cd projects/ '); }
-    distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
-    publickey.onclick = function() { appendCommand('wget -q /xtonousou-pubkey.asc '); }
+    contact.onclick = function(){ appendCommand('cd contact/ '); }
+    projects.onclick = function()e { appendCommand('cd projects/ '); }
+    distro.onclick = function()a{ appendCommand('$BROWSER https://www.archlinux.org '); }
+    publickey.onclick = appendCommand('wget -q /xtonousou-pubkey.asc ');
     
     break;
   case "/home/xtonousou/bio":
