@@ -1,4 +1,4 @@
-$(document).ready(function() {
+if (sane) {
   switch (document.title) {
     case "/home/xtonousou":
       document.getElementById('pk').href = "/xtonousou-pubkey.asc";
@@ -33,4 +33,4 @@ $(document).ready(function() {
     default:
     console.error("inject.js : unknown document.title");
   }
-});
+}
