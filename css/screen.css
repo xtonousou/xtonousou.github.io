@@ -71,7 +71,7 @@
   font-family: courier, monospace;
   color: #C2C2C2;
   font-size: 13px;
-  padding: 2em;
+  padding: 1em;
 }
 
 /* Stand */
@@ -111,6 +111,20 @@
   /* Console on the screen */
   #console {
     font-size: 12px;
+  }
+}
+
+/* 1080px and less ------------------------------ */
+@media (max-width: 1080px) {
+
+  .container {
+    width: 800px;
+    height: 350px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 11px;
   }
 }
 
