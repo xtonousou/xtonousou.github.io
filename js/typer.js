@@ -146,8 +146,8 @@ function initTyper(typingSpeed, textFile) {
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
       $.getScript("/js/inject.js", function() {
--        console.log("Started inject.js...");
--     });
+        console.log("Started inject.js...");
+      });
     }
   }, 30);
 }
