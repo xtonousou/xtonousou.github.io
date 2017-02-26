@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css?family=VT323);
+
 /* The container that defines the dimenions of the monitor - used in media queries */
 .container {
   width: 900px;
@@ -31,11 +33,11 @@
 .monitor:after {
   content: '';
   display: block;
-  background: #66ADFF;
+  background: #E3413D;
   position: absolute;
   padding: 1%;
   border-radius: 50%;
-  right: 0%;
+  right: 3%;
   bottom: 1.5%;
 }
 
@@ -66,10 +68,11 @@
 
 /* Console on the screen */
 #console {
-  font-family: courier, monospace;
+  font-family: 'VT323';
   color: #C2C2C2;
   font-size: 13px;
   padding: 1em;
+  line-height: 1.2;
 }
 
 /* Stand */
