@@ -16,17 +16,6 @@ b {
   font-weight: bolder;
 }
 
-#console {
-  font-family: courier, monospace;
-  color: #C2C2C2;
-  width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  font-size: 14px;
-  border: 1px solid #5A5A5A;
-}
-
 #u {
   color: #FF4B14;
   font-weight: bolder;

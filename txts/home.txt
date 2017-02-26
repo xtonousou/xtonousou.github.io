@@ -1,5 +1,4 @@
-<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>bash --login <!-- 5l33p5l33p -->
-xtonousou: Sotirios M. Roussis
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>bash --login <!-- 5l33p5l33p5l33p -->
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>whoami<!-- 5l33p5l33p -->
 xtonousou: Sotirios M. Roussis
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>gpg --fingerprint xtonousou<!-- 5l33p5l33p5l33p5l33p5l33p5l33p5l33p -->
