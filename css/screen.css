@@ -42,14 +42,14 @@
 /* The container of the content */
 .screen {
   height: 100%;
-  /*overflow: hidden; /* so that scroll bar is hidden */
+  overflow: hidden; /* so that scroll bar is hidden */
 }
 
 /* Scrollable section inside the screen */
 .content {
   background-color: #000000;
   height: 100%;
-  width: 12px;
+  width: calc(100% + 17px); /* 17px for scroll bar */
   overflow-y: scroll;
   position: relative;
 }
