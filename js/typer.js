@@ -26,17 +26,20 @@ var Typer = {
 
   // get console content
   content: function() {
+    
     return $("#console").html();
   },
 
   // append to console content
   write: function(str) {
+    
     $("#console").append(str);
     return false;
   },
 
   // main function to add the code
   addText: function(key) {
+    
     // if text is loaded
     if (Typer.text) {
       // if the last char is the blinking cursor
@@ -74,6 +77,7 @@ var Typer = {
 
   // blinking cursor
   updLstChr: function() {
+    
     // if last char is the cursor
     if (this.content().substring(this.content().length - 1, this.content().length) == "_") {
       // remove it
@@ -129,5 +133,5 @@ function initTyper(typingSpeed, textFile) {
         console.log("Injected hrefs.");
       });
     }
-  }, 30);
+  }, 10);
 }
