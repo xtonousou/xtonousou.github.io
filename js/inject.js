@@ -1,5 +1,6 @@
 var timer3 = setInterval( function() {
   if (sane) {
+    clearInterval(timer3);
     switch (document.title) {
       case "/home/xtonousou":
         document.getElementById('pk').href = "/xtonousou-pubkey.asc";
