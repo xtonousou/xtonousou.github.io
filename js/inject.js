@@ -1,3 +1,6 @@
+// all hrefs are documented here
+// in case of new page addition, put the additional href here
+// based on document.title
 switch (document.title) {
   case "/home/xtonousou":
     document.getElementById('pk').href = "/xtonousou-pubkey.asc";
@@ -9,7 +12,7 @@ switch (document.title) {
   case "/home/xtonousou/bio":
     document.getElementById('cdb1').href = "javascript:window.location.reload();";
     document.getElementById('cdb2').href = "/index.html";
-  break;
+    break;
   case "/home/xtonousou/contact":
     document.getElementById('cdc1').href = "javascript:window.location.reload();";
     document.getElementById('cdc2').href = "/index.html";
@@ -21,7 +24,7 @@ switch (document.title) {
     document.getElementById('cso').href = "http://stackoverflow.com/users/4946732/xtonousou";
     document.getElementById('ct').href = "https://twitter.com/xToNouSou";
     document.getElementById('cy').href = "https://www.youtube.com/channel/UCMb3FpBNVRp-VYwhLrylo0g";
-  break;
+    break;
   case "/home/xtonousou/projects":
     document.getElementById('cdp1').href = "javascript:window.location.reload();";
     document.getElementById('cdp2').href = "/index.html";
@@ -30,7 +33,7 @@ switch (document.title) {
     document.getElementById('ps').href = "https://github.com/xtonousou/.scripts";
     document.getElementById('psh').href = "https://github.com/xtonousou/shIP";
     document.getElementById('pxs').href = "https://github.com/xtonousou/xSoundBoardHD";
-  break;
+    break;
   default:
   console.error("inject.js : unknown document.title");
 }

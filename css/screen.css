@@ -51,6 +51,7 @@
   height: 100%;
   width: calc(100% + 100px); /* 100px in order to hide completely */
   overflow-y: scroll;
+  overflow-x: scroll;
   position: relative;
 }
 
@@ -115,6 +116,7 @@
 
 /* 992px and less ------------------------------ */
 @media (max-width: 992px) {
+
   .container {
     width: 600px;
     height: 350px;

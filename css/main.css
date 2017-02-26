@@ -35,6 +35,7 @@ b {
   font-weight: bold;
 }
 
+/* Color for directories and pseudo-directories */
 #cdh1, #cdh2, #cdh3,
 #cdb1, #cdb2,
 #cdc1, #cdc2,
@@ -43,6 +44,7 @@ b {
   font-weight: bold;
 }
 
+/* Hover color for directories and pseudo-directories */
 #cdh1:hover, #cdh2:hover, #cdh3:hover,
 #cdb1:hover, #cdb2:hover,
 #cdc1:hover, #cdc2:hover,

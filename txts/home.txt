@@ -4,9 +4,7 @@ xtonousou: Sotirios M. Roussis
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>gpg --fingerprint xtonousou<!-- 5l33p5l33p5l33p5l33p5l33p5l33p5l33p -->
 pub 4096R/A4C5AEA1 2017-02-24
 520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
-<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>locate xtonousou-pubkey.asc<!-- 5l33p5l33p5l33p5l33p5l33p5l33p5l33p -->
-<a id="pk">https://xtonousou.github.io/xtonousou-pubkey.asc</a>
-<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>pwd<!-- 5l33p -->
+<span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>pwd<!-- 5l33p5l33p -->
 /Earth/Europe/Greece/Attiki/Athens
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>cat &#60; distro.sh<!-- 5l33p5l33p5l33p5l33p -->
 #!/usr/bin/env bash
