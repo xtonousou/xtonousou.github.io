@@ -1,112 +1,131 @@
-// typing effect logic
 var Typer = {
-  
+
   text: null,
+  accessCountimer: null,
+  
+  index: 0,     // current cursor position
+  speed: 2,     // speed of the Typer
+  file: "",     // file, must be setted
 
-  index: 0, // current cursor position
-  speed: 2, // speed of the Typer
-  file: "", // file, must be setted
-
+  accessCount: 0, // times alt is pressed for Access Granted
+  deniedCount: 0, // times caps is pressed for Access Denied
+  
   // inizialize Hacker Typer
   init: function() {
     
-    // inizialize timer for blinking cursor
-    setInterval(function() {
+    accessCountimer = setInterval(
+      function() { // inizialize timer for blinking cursor
         Typer.updLstChr();
       }, 650
     );
-
-    // get the text file
-    $.get(Typer.file, function(data) {
-      // save the textfile in Typer.text
-      Typer.text = data;
+    $.get(Typer.file, function(data) { // get the text file
+      Typer.text = data; // save the textfile in Typer.text
       Typer.text = Typer.text.slice(0, Typer.text.length - 1);
     });
   },
-
-  // get console content
+ 
   content: function() {
-    return $("#console").html();
+    
+    return $("#console").html(); // get console content
   },
-
-  // append to console content
-  write: function(str) {
+ 
+  write: function(str) { // append to console content
+    
     $("#console").append(str);
     return false;
   },
 
-  // main function to add the code
-  addText: function(key) {
-    // if text is loaded
-    if (Typer.text) {
-      var cont = Typer.content();
-      // if the last char is the blinking cursor
-      if (cont.substring(cont.length - 1, cont.length) == "_") {
-        // remove it before adding the text
-        $("#console").html($("#console").html().substring(0, cont.length - 1));
-      }
+  //TODO popup is on top of the page and doesn't show is the page is scrolled
+  makeAccess: function() { // create Access Granted popUp
+    
+    Typer.hidepop(); // hide all popups
+    Typer.accessCount = 0; //reset count
+    var ddiv = $("<div id='gran'>").html(""); // create new blank div and id "gran"
+    ddiv.addClass("accessGranted"); // add class to the div
+    ddiv.html("<h1>ACCESS GRANTED</h1>"); // set content of div
+    $(document.body).prepend(ddiv); // prepend div to body
+    return false;
+  },
 
-      // if key is not backspace
-      if (key.keyCode != 8) {
-        // add to the index the speed
-        Typer.index += Typer.speed;
+  //TODO popup is on top of the page and doesn't show is the page is scrolled
+  makeDenied: function() { // create Access Denied popUp
+    
+    Typer.hidepop(); // hide all popups
+    Typer.deniedCount = 0; // reset count
+    var ddiv = $("<div id='deni'>").html(""); // create new blank div and id "deni"
+    ddiv.addClass("accessDenied"); // add class to the div
+    ddiv.html("<h1>ACCESS DENIED</h1>"); // set content of div
+    $(document.body).prepend(ddiv); // prepend div to body
+    return false;
+  },
+ 
+  hidepop: function() { // remove all existing popups
+    
+    $("#deni").remove();
+    $("#gran").remove();
+  },
+ 
+  addText: function(key) { // main function to add the code
+    
+    if (key.keyCode == 18) { // key 18 = alt key
+      Typer.accessCount++; // increase counter 
+      if (Typer.accessCount >= 3) { // if it's presed 3 times
+        Typer.makeAccess(); // make access popup
+      }
+    } else if (key.keyCode == 20) { // key 20 = caps lock
+      Typer.deniedCount++; // increase counter
+      if (Typer.deniedCount >= 3) { // if it's pressed 3 times
+        Typer.makeDenied(); // make denied popup
+      }
+    } else if (key.keyCode == 27) { // key 27 = esc key
+      Typer.hidepop(); // hide all popups
+    } else if (Typer.text) { // otherway if text is loaded
+      var cont = Typer.content(); // get the console content
+      if (cont.substring(cont.length - 1, cont.length) == "_") // if the last char is the blinking cursor
+        $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it before adding the text
+      if (key.keyCode != 8) { // if key is not backspace
+        Typer.index += Typer.speed; // add to the index the speed
       } else {
-        // else if index is not less than 0
-        if (Typer.index > 0) {
-          // remove speed for deleting text
-          Typer.index -= Typer.speed;
-        }
+        if (Typer.index > 0) // else if index is not less than 0 
+          Typer.index -= Typer.speed; // remove speed for deleting text
       }
 
-      // replace newline chars with br, tabs with 4 space and blanks with an html blank
-      $("#console").html(Typer.text.substring(0, Typer.index).replace(new RegExp("\n", "g"),"<br/>"));
-    }
-
-    // prevent F11(fullscreen) from being blocked
-    if (key.preventDefault && key.keyCode != 122) {
-      key.preventDefault();
+      var text = Typer.text.substring(0, Typer.index); // parse the text for stripping html enities
+      $("#console").html(text.replace(new RegExp("\n", "g"),"<br/>")); // replace newline chars with br, tabs with 4 space and blanks with an html blank
+      window.scrollBy(0, 50); // scroll to make sure bottom is always visible
     }
     
-    // otherway prevent keys default behavior
-    if (key.keyCode != 122) {
+    if (key.preventDefault && key.keyCode != 122) { // prevent F11(fullscreen) from being blocked
+      key.preventDefault();
+    }
+     
+    if (key.keyCode != 122) { // otherway prevent keys default behavior
       key.returnValue = false;
     }
   },
-
-  // blinking cursor
-  updLstChr: function() {
-    // if last char is the cursor
-    if (this.content().substring(this.content().length - 1, this.content().length) == "_") {
-      // remove it
-      $("#console").html($("#console").html().substring(0, this.content().length - 1));
-    } else {
-      // else write it
-      this.write("_");
-    }
+ 
+  updLstChr: function() { // blinking cursor
+    
+    var cont = this.content(); // get console 
+    if (cont.substring(cont.length - 1, cont.length) == "_") // if last char is the cursor
+      $("#console").html($("#console").html().substring(0, cont.length - 1)); // remove it
+    else
+      this.write("_"); // else write it
   },
 
-  // append to console
-  append: function(command) {
-
-    // save it in Typer.text
-    Typer.text = command;
+  append: function(command) { // append extra sh!t
+    
+    Typer.text = command; // save it in Typer.text
     Typer.text = Typer.text.slice(0, Typer.text.length - 1);
-
-    // if the last char is the blinking cursor
-    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") {
-      // remove it before adding the text
-      $("#console").html($("#console").html().substring(0, Typer.content().length - 1));
-    }
-
+    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") // if the last char is the blinking cursor
+      $("#console").html($("#console").html().substring(0, Typer.content().length - 1)); // remove it before adding the text
     $("#console").append(Typer.text);
+    window.scrollBy(0, 50); // scroll to make sure bottom is always visible
 
     var timer2 = setInterval( function() {
       if (Typer.text && Typer.index > Typer.text.length) {
-        // clear the interval
         clearInterval(timer2);
-        // clear before redirection
-        $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
-        // update cursor
+        $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change location
         Typer.updLstChr();
       }
     }, 750);
@@ -121,16 +140,13 @@ function initTyper(typingSpeed, textFile) {
   Typer.speed = typingSpeed;
   Typer.file = textFile;
   Typer.init();
-
+  
   var timer = setInterval( function() {
-    // add the text
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
-      // clear the interval
       clearInterval(timer);
-      // start inject.js (inject hrefs)
       $.getScript("/js/inject.js", function() {
-        console.log("Injected hrefs.");
+        console.log("Injected hrefs!");
       });
     }
   }, 30);
