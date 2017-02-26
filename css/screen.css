@@ -2,16 +2,15 @@
   font-family: courier, monospace;
   background-color: #000000;
   color: #C2C2C2;
-  font-size: 14px;
-}
-
-article {
+  font-size: 13px;
   padding: 4em;
 }
 
 .monitor {
-  width: 515px;
-  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40%;
   overflow-y: scroll;
   border: solid 1em #333;
   border-radius: .5em;
