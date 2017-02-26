@@ -133,6 +133,9 @@ function initTyper(step, file, speed) {
       $.getScript("/js/inject.js", function() {
         console.log("Injected hrefs.");
       });
+      $.getScript("/js/clipboard.js", function() {
+        console.log("Click to copy is now active.");
+      });
     }
   }, speed);
 }
