@@ -48,10 +48,8 @@
 /* Scrollable section inside the screen */
 .content {
   background-color: #000000;
-  /*width: 100%; /* x - scrollbar */
   height: 100%;
   overflow-y: scroll;
-  overflow-x: scroll;
   position: relative;
 }
 
