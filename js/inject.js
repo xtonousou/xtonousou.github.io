@@ -3,7 +3,11 @@
 // based on document.title
 switch (document.title) {
   case "/home/xtonousou":
-    console.log("no error now?");
+    document.getElementById('pk').href = "/xtonousou-pubkey.asc";
+    document.getElementById('di').href = "https://www.archlinux.org";
+    document.getElementById('cdh1').href = "/bio.html";
+    document.getElementById('cdh2').href = "/contact.html";
+    document.getElementById('cdh3').href = "/projects.html";
     break;
   case "/home/xtonousou/bio":
     document.getElementById('cdb1').href = "javascript:window.location.reload();";

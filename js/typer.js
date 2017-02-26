@@ -122,12 +122,9 @@ function initTyper(typingSpeed, textFile) {
   Typer.init();
 
   var timer = setInterval( function() {
-    // add the text
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
-      // clear the interval
       clearInterval(timer);
-      // start inject.js (inject hrefs)
       $.getScript("/js/inject.js", function() {
         console.log("Injected hrefs.");
       });
