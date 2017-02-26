@@ -1,3 +1,6 @@
+// stop blinking to handle events
+clearInterval(Typer.accessCountimer);
+
 switch (document.title) {
 
   case "/home/xtonousou":
@@ -13,14 +16,12 @@ switch (document.title) {
     projects.href = "/projects.html";
     distro.href = "https://www.archlinux.org";
     publickey.href = "/xtonousou-pubkey.asc";
-
-    $(document).ready(function() {
-      bio.onclick = function() { appendCommand('cd bio/ '); }
-      contact.onclick = function() { appendCommand('cd contact/ '); }
-      projects.onclick = function() { appendCommand('cd projects/ '); }
-      distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
-      publickey.onclick = function() { appendCommand('wget -q /xtonousou-pubkey.asc '); }
-    });
+    
+    bio.onclick = function() { appendCommand('cd bio/ '); }
+    contact.onclick = function() { appendCommand('cd contact/ '); }
+    projects.onclick = function() { appendCommand('cd projects/ '); }
+    distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
+    publickey.onclick = function() { appendCommand('wget -q /xtonousou-pubkey.asc '); }
     
     break;
   case "/home/xtonousou/bio":
@@ -38,3 +39,6 @@ switch (document.title) {
   default:
     console.error("inject.js : unknown document.title");
 }
+
+// start blinking again
+setInterval( function() { Typer.updLstChr(); }, 650);
