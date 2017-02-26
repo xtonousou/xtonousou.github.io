@@ -49,7 +49,7 @@
 .content {
   background-color: #000000;
   height: 100%;
-  width: calc(100% + 17px); /* 17px for scroll bar */
+  width: calc(100% + 100px); /* 100px in order to hide completely */
   overflow-y: scroll;
   position: relative;
 }
