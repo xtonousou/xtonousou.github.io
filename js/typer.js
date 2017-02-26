@@ -135,7 +135,7 @@ var Typer = {
 // initializes typer
 // typingSpeed is an integer
 // textFile is the path to .txt file "/txts/smth.txt"
-function initTyper(typingSpeed, textFile, page) {
+function initTyper(typingSpeed, textFile) {
 
   Typer.speed = typingSpeed;
   Typer.file = textFile;
@@ -145,42 +145,9 @@ function initTyper(typingSpeed, textFile, page) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
-      inject(page);
+      $.getScript("/js/inject.js", function() {
+-        console.log("Started inject.js...");
+-      });
     }
   }, 30);
-}
-
-// injects href and onclick values on stuff
-// page is the page you are in e.g. "bio" or "projects"
-function inject(page) {
-  switch (page) {
-    case "home":
-      var bio = document.getElementById('cdh1');
-      var contact = document.getElementById('cdh2');
-      var projects = document.getElementById('cdh3');
-      var distro = document.getElementById('al');
-      var publickey = document.getElementById('pk');
-
-      bio.href = "/bio.html";
-      contact.href = "/contact.html";
-      projects.href = "/projects.html";
-      distro.href = "https://www.archlinux.org";
-      publickey.href = "/xtonousou-pubkey.asc";
-
-      bio.onclick = function() { Typer.append('cd bio/ '); }
-      contact.onclick = function() { Typer.append('cd contact/ '); }
-      projects.onclick = function() { Typer.append('cd projects/ '); }
-      distro.onclick = function() { Typer.append('$BROWSER https://www.archlinux.org '); }
-      publickey.onclick = function() { Typer.append('wget -q /xtonousou-pubkey.asc '); }
-
-      break;
-    case "bio":
-    break;
-    case "contact":
-    break;
-    case "projects":
-    break;
-    default:
-    console.error("inject.js : unknown page " + page);
-  }
 }
