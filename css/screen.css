@@ -9,8 +9,8 @@
 .monitor {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 40%;
+  width: 60%;
+  height: 300px;
   overflow-y: scroll;
   border: solid 1em #333;
   border-radius: .5em;
