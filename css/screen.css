@@ -8,7 +8,7 @@
 /* Black monitor outline */
 .monitor {
   padding: 4%;
-  position:relative;
+  position: relative;
   background: #333333;
   border-radius: 10px;
   height: 100%;
@@ -16,7 +16,7 @@
 
 /* Camera on top of the monitor */
 .monitor:before {
-  content: "";
+  content: '';
   display: block;
   background: #EDE6E7;
   position: absolute;
@@ -29,7 +29,7 @@
 
 /* Power button on the bottom of monitor */
 .monitor:after {
-  content: "";
+  content: '';
   display: block;
   background: #BDABAA;
   position: absolute;
@@ -53,8 +53,21 @@
   position: relative;
 }
 
+.content::-webkit-scrollbar {
+  width: 17px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 25%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #888;
+}
+
 .screen:after {
-  content:'';
+  content: '';
   display: block;
   height: 88%;
   background: #333;
