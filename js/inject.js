@@ -1,32 +1,36 @@
-switch (document.title) {
-  case "/home/xtonousou":
-    var bio = document.getElementById('cdh1');
-    var contact = document.getElementById('cdh2');
-    var projects = document.getElementById('cdh3');
-    var distro = document.getElementById('al');
-    var publickey = document.getElementById('pk');
+$(document).ready(function() {
+  switch (document.title) {
+    case "/home/xtonousou":
+      document.getElementById('pk').href = "/xtonousou-pubkey.asc";
+      document.getElementById('al').href = "https://www.archlinux.org";
+      document.getElementById('cdh1').href = "/bio.html";
+      document.getElementById('cdh2').href = "/contact.html";
+      document.getElementById('cdh3').href = "/projects.html";
 
-    bio.href = "/bio.html";
-    contact.href = "/contact.html";
-    projects.href = "/projects.html";
-    distro.href = "https://www.archlinux.org";
-    publickey.href = "/xtonousou-pubkey.asc";
+      $("#pk").click(function() {
+        Typer.append('wget -q /xtonousou-pubkey.asc ');
+      });
+      $("#al").click(function() {
+        Typer.append('$BROWSER https://www.archlinux.org ');
+      });
+      $("#cdh1").click(function() {
+        Typer.append('cd bio/ ');
+      });
+      $("#cdh2").click(function() {
+        Typer.append('cd contact/ ');
+      });
+      $("#cdh3").click(function() {
+        Typer.append('cd projects/ ');
+      });
 
-    bio.addEventListener("click", function() { Typer.append('cd bio/ '); }, false); 
-
-    //bio.onclick = function() { Typer.append('cd bio/ '); }
-    contact.onclick = function() { Typer.append('cd contact/ '); }
-    projects.onclick = function() { Typer.append('cd projects/ '); }
-    distro.onclick = function() { Typer.append('$BROWSER https://www.archlinux.org '); }
-    publickey.onclick = function() { Typer.append('wget -q /xtonousou-pubkey.asc '); }
-
+      break;
+    case "/home/xtonousou/bio":
     break;
-  case "/home/xtonousou/bio":
-  break;
-  case "/home/xtonousou/contact":
-  break;
-  case "/home/xtonousou/projects":
-  break;
-  default:
-  console.error("inject.js : unknown document.title");
-}
+    case "/home/xtonousou/contact":
+    break;
+    case "/home/xtonousou/projects":
+    break;
+    default:
+    console.error("inject.js : unknown document.title");
+  }
+});

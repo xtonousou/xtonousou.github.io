@@ -145,9 +145,6 @@ function initTyper(typingSpeed, textFile) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
-      $.getScript("/js/inject.js", function() {
-        console.log("Started inject.js...");
-      });
     }
   }, 30);
 }
