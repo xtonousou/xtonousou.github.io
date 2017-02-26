@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
 
 /* The container that defines the dimenions of the monitor - used in media queries */
 .container {
@@ -68,7 +68,7 @@
 
 /* Console on the screen */
 #console {
-  font-family: 'Source Code Pro';
+  font-family: 'Roboto Mono';
   color: #C2C2C2;
   font-size: 13px;
   padding: 1em;
