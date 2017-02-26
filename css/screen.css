@@ -48,6 +48,8 @@
 /* Scrollable section inside the screen */
 .content {
   background-color: #000000;
+  width: 100%;
+  height: calc(100% + 150px); /* 17 in order to hide completely x bar */
   overflow-y: scroll;
   overflow-x: scroll;
   position: relative;
