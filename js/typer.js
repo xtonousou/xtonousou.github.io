@@ -3,13 +3,9 @@ var Typer = {
   
   text: null,
 
-  console.log("1");
-
   index: 0, // current cursor position
   speed: 2, // speed of the Typer
   file: "", // file, must be setted
-
-  console.log("2");
 
   // inizialize Hacker Typer
   init: function() {
