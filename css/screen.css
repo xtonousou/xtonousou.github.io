@@ -18,25 +18,25 @@
 .monitor:before {
   content: '';
   display: block;
-  background: #BDABAA;
+  background: #EDE6E7;
   position: absolute;
-  padding: 1%;
+  padding: 0.8%;
+  margin-right: -0.4%;
   border-radius: 10%;
   right: 50%;
-  bottom: 1.8%;
+  top: 1.8%;
 }
 
 /* Power button on the bottom of monitor */
 .monitor:after {
   content: '';
   display: block;
-  background: #EDE6E7;
+  background: #BDABAA;
   position: absolute;
-  padding: 0.8%;
-  margin-right: -0.4%;
+  padding: 1%;
   border-radius: 50%;
   right: 4%;
-  top: 1.5%;
+  bottom: 1.5%;
 }
 
 /* The container of the content */
