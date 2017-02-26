@@ -42,7 +42,7 @@
 /* The container of the content */
 .screen {
   height: 100%;
-  /*overflow: hidden; /* so that scroll bar is hidden */
+  overflow: hidden; /* so that scroll bar is hidden */
 }
 
 /* Scrollable section inside the screen */
