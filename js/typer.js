@@ -145,7 +145,6 @@ function initTyper(typingSpeed, textFile) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
-      return true;
     }
   }, 30);
 }
