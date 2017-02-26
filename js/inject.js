@@ -14,7 +14,7 @@ switch (document.title) {
     distro.href = "https://www.archlinux.org";
     publickey.href = "/xtonousou-pubkey.asc";
 
-    bio.onclick = function(event) { appendCommand('cd bio/ '); }
+    $("#cdh1").click(function() { appendCommand('cd bio/ '); });
     contact.onclick = function() { appendCommand('cd contact/ '); }
     projects.onclick = function() { appendCommand('cd projects/ '); }
     distro.onclick = function() { appendCommand('$BROWSER https://www.archlinux.org '); }
