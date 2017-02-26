@@ -8,7 +8,12 @@ a {
 }
 
 a:hover {
-  color: #7DFF7D;
+  color: #12B412;
+}
+
+b {
+  color: #FFFFFF;
+  font-weight: bolder;
 }
 
 #console {
@@ -26,23 +31,20 @@ a:hover {
 }
 
 #d {
-  color: #FF55B9;
-}
-
-#s {
-  color: #64FF96;
+  color: #FF5CBC;
   font-weight: bold;
 }
 
-#cd, #cdh1, #cdh2, #cdh3 {
-  color: #0F7DC8;
+#s {
+  color: #50E27E;
+  font-weight: bold;
 }
 
-#cd:hover, #cdh1:hover, #cdh2:hover, #cdh3:hover {
+#cdh1, #cdh2, #cdh3, #cdb1, #cdb2, #cdc1, #cdc2, #cdp1, #cdp2, #pa, #pm, #ps, #psh, #pxs {
+  color: #0F74B8;
+  font-weight: bold;
+}
+
+#cdh1:hover, #cdh2:hover, #cdh3:hover, #cdb1:hover, #cdb2:hover, #cdc1:hover, #cdc2:hover, #cdp1:hover, #cdp2:hover, #pa:hover, #pm:hover, #ps:hover, #psh:hover, #pxs:hover {
   color: #32FFFF;
-}
-
-#w {
-  color: #FFFFFF;
-  font-weight: bolder;
 }

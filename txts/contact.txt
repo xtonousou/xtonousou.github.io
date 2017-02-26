@@ -1,13 +1,13 @@
-<span id="username">xtonousou</span>:<span id="directory">~/contact</span><span id="shell">$ </span>ls -laF
-  total 40
-  drwxr-xr-- 2 xtonousou xtonousou           4096 Feb 24 23:22 <a id="dirLink" onclick="appendCommand('cd ./ ');" href="javascript:window.location.reload();">./</a>
-  drwxr-xr-- 5 xtonousou xtonousou           4096 Feb 24 23:37 <a id="dirLink" onclick="appendCommand('cd ../ ');" href="/index.html">../</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;27 Feb 24 23:22 <a onclick="appendCommand('./sendMailTo.sh xtonousou@gmail.com ');" href="mailto:xtonousou@gmail.com">email</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;35 Feb 24 22:25 <a onclick="appendCommand('$BROWSER https://www.facebook.com/xtonousou ');" href="https://www.facebook.com/xtonousou">facebook</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;29 Feb 24 22:26 <a onclick="appendCommand('$BROWSER https://github.com/xtonousou ');" href="https://github.com/xtonousou">github</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;33 Feb 24 23:12 <a onclick="appendCommand('$BROWSER https://soundcloud.com/xtonousou ');" href="https://soundcloud.com/xtonousou">soundcloud</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;40 Feb 24 23:10 <a onclick="appendCommand('$BROWSER https://open.spotify.com/user/xtonousou ');" href="https://open.spotify.com/user/xtonousou">spotify</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;49 Feb 24 23:19 <a onclick="appendCommand('$BROWSER http://stackoverflow.com/users/4946732/xtonousou ');" href="http://stackoverflow.com/users/4946732/xtonousou">stackoverflow</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;30 Feb 24 22:26 <a onclick="appendCommand('$BROWSER https://twitter.com/xToNouSou ');" href="https://twitter.com/xToNouSou">twitter</a>
-  -rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;57 Feb 24 22:37 <a onclick="appendCommand('$BROWSER https://www.youtube.com/channel/UCMb3FpBNVRp-VYwhLrylo0g ');" href="https://www.youtube.com/channel/UCMb3FpBNVRp-VYwhLrylo0g">youtube</a>
-<span id="username">xtonousou</span>:<span id="directory">~/contact</span><span id="shell">$ </span>
+<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span>ls -laF<!-- 5l33p5l33p5l33p -->
+total 40
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdc1">./</a>
+drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdc2">../</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;27 Feb 24 23:22 <a id="cm">email</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;35 Feb 24 22:25 <a id="cf">facebook</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;29 Feb 24 22:26 <a id="cg">github</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;33 Feb 24 23:12 <a id="csc">soundcloud</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;40 Feb 24 23:10 <a id="cs">spotify</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;49 Feb 24 23:19 <a id="cso">stackoverflow</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;30 Feb 24 22:26 <a id="ct">twitter</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;57 Feb 24 22:37 <a id="cy">youtube</a>
+<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span>
