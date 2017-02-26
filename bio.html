@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
     <title>/home/xtonousou/bio</title>
@@ -12,9 +12,20 @@
     <script type="text/javascript">initTyper(4,'/txts/bio.txt');</script>
     
     <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/screen.css"/>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico"/>
   </head>
   <body>
-    <div id="console"></div>
+    <div class="container">
+      <div class="monitor">
+        <div class="screen">
+          <div class="content">
+            <!-- Terminal-like effect executes here -->
+            <div id="console"></div>
+            <!-- End of terminal-like effect -->
+          </div>
+        </div>
+      </div><div class="monitor-stand"></div>
+    </div>
   </body>
 </html>
