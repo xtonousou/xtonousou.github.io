@@ -16,8 +16,8 @@ switch (document.title) {
 
     bio.onclick = function() { alert(1); appendCommand('cd bio/ '); }
     contact.onclick = function(){ appendCommand('cd contact/ '); }
-    projects.onclick = function()e { appendCommand('cd projects/ '); }
-    distro.onclick = function()a{ appendCommand('$BROWSER https://www.archlinux.org '); }
+    projects.onclick = function e() { appendCommand('cd projects/ '); }
+    distro.onclick = function ed(){ appendCommand('$BROWSER https://www.archlinux.org '); }
     publickey.onclick = appendCommand('wget -q /xtonousou-pubkey.asc ');
     
     break;
