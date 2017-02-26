@@ -122,8 +122,7 @@ function initTyper(typingSpeed, textFile) {
   Typer.file = textFile;
   Typer.init();
 
-  var timer = setInterval('t()', 30);
-  function t() {
+  var timer = setInterval( function t() {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
@@ -131,8 +130,8 @@ function initTyper(typingSpeed, textFile) {
         console.log("Starting inject.js...");
       });
     }
-  }
-
+  }, 30);
+  
   return true;
 }
 
@@ -146,14 +145,13 @@ function appendCommand(command) {
   $("#console").append(Typer.text);
   window.scrollBy(0, 50); // scroll to make sure bottom is always visible
 
-  var timer2 = setInterval('t2()', 750);
-  function t2() {
+  var timer2 = setInterval( function t2() {
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer2);
       $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); // clear before change directory
       Typer.updLstChr();
     }
-  }
+  }, 750);
   
   return true;
 }
