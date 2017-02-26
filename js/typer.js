@@ -129,15 +129,6 @@ var Typer = {
         Typer.updLstChr();
       }
     }, 750);
-  },
-
-  ready: function() {
-    var timer3 = setInterval(function() {
-      if (Typer.text && Typer.index > Typer.text.length) {
-        clearInterval(timer3);
-        return true;
-      }
-    }, 30);
   }
 }
 
