@@ -117,12 +117,13 @@ var Typer = {
 }
 
 // initializes typer
-// typingSpeed is an integer
-// textFile is the path to .txt file "/txts/smth.txt"
-function initTyper(typingSpeed, textFile) {
+// step is an integer, how many letters will be processed at a time
+// file is the path to .txt file "/txts/smth.txt"
+// speed is an integer, typing speed
+function initTyper(step, file, speed) {
 
-  Typer.speed = typingSpeed;
-  Typer.file = textFile;
+  Typer.speed = step;
+  Typer.file = file;
   Typer.init();
 
   var timer = setInterval( function() {
@@ -133,5 +134,5 @@ function initTyper(typingSpeed, textFile) {
         console.log("Injected hrefs.");
       });
     }
-  }, 10);
+  }, speed);
 }
