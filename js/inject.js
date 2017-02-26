@@ -5,6 +5,9 @@ switch (document.title) {
     var projects = document.getElementById('cdh3');
     var distro = document.getElementById('al');
     var publickey = document.getElementById('pk');
+    var bioEv = 'onclick = "Typer.append('cd bio/ ');"'
+
+    $('#cdh1').append(bioEv);
 
     bio.href = "/bio.html";
     contact.href = "/contact.html";
@@ -12,7 +15,6 @@ switch (document.title) {
     distro.href = "https://www.archlinux.org";
     publickey.href = "/xtonousou-pubkey.asc";
 
-    bio.onclick = function(Typer) { Typer.append('cd bio/ '); }
     contact.onclick = function() { Typer.append('cd contact/ '); }
     projects.onclick = function() { Typer.append('cd projects/ '); }
     distro.onclick = function() { Typer.append('$BROWSER https://www.archlinux.org '); }
