@@ -13,5 +13,5 @@ echo "<a id="di">Arch Linux</a>"
 total 12
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1">bio/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdh2">contact/</a>
-drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdh3">projects/</a>
+drwxr-xr-- 7 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdh3">projects/</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>
