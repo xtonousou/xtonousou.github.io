@@ -1,4 +1,4 @@
-<span id="u">xtonousou</span>:<span id="d">~/projects</span><span id="s">$ </span>ls -laF<!-- 5l33p5l33p5l33p -->
+<span id="u">xtonousou</span>:<span id="d">~/projects</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->ls -laF
 total 28
 drwxr-xr-- 7 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdp1">./</a>
 drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdp2">../</a>
