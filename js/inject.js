@@ -3,6 +3,7 @@
 // based on document.title
 switch (document.title) {
   case "/home/xtonousou":
+    document.getElementById('hem').href = "mailto:xtonousou@gmail.com";
     document.getElementById('di').href = "https://www.archlinux.org";
     document.getElementById('cdh1').href = "/bio.html";
     document.getElementById('cdh2').href = "/contact.html";
