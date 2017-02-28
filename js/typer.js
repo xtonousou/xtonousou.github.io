@@ -109,12 +109,26 @@ var Typer = {
         // update cursor
         Typer.updLstChr();
         // clear before redirection
-        window.onbeforeunload = function() {
-          $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
-        };
+        runevent();
       }
     }, 500);
   }
+}
+
+function runevent() {
+
+  window.onbeforeunload = function(event) {
+    var s = "You have unsaved changes. Really leave?";
+
+    event = event || window.event;
+    if (event) {
+        // This is for IE
+        event.returnValue = s;
+    }
+
+    // This is for all other browsers
+    return s;
+}
 }
 
 function startInterval(interval) {
