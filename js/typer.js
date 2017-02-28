@@ -104,14 +104,8 @@ var Typer = {
 
     Typer.updLstChr();
 
-    // wait 1 second and clear the text that has been appended
-    setTimeout(function() { $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); }, 1000);
+    $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
   }
-}
-
-function cleanOnChange() {
-
-  
 }
 
 function startInterval(interval) {
