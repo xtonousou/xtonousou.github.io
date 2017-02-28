@@ -129,10 +129,11 @@ function initTyper(step, file, speed) {
   var interval = speed;
   var timer = setInterval( function() {
     Typer.addText({"KeyCode": 123748});
-    if (Typer.text.charAt(Typer.index) == '<') {
-      interval = 1;
-    } else if (Typer.text.charAt(Typer.index) == '>') {
-      interval = speed;
+    if (Typer.text) {
+      if (Typer.text.charAt(Typer.index) == '<')
+        interval = 1;
+      else if (Typer.text.charAt(Typer.index) == '>')
+        interval = speed;
     }
     console.log(interval);
     if (Typer.text && Typer.index > Typer.text.length) {
