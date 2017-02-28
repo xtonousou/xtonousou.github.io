@@ -109,9 +109,7 @@ var Typer = {
         // update cursor
         Typer.updLstChr();
         // clear before redirection
-        window.onbeforeunload = function(event) {
-          $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
-        }
+        $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
       }
     }, 500);
   }
