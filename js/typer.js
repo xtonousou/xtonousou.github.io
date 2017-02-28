@@ -116,6 +116,34 @@ var Typer = {
   }
 }
 
+function startInterval(interval) {
+  
+  intervalID = setInterval(function() {
+    console.log(interval);
+    Typer.addText({"KeyCode": 123748});
+    if (Typer.text) {
+      if (Typer.text.charAt(Typer.index) == '<')
+        newInterval(1, intervalID);
+      else if (Typer.text.charAt(Typer.index) == '>')
+        newInterval(interval, intervalID);
+    }
+    if (Typer.text && Typer.index > Typer.text.length) {
+      clearInterval(intervalID);
+      /*$.getScript("/js/inject.js", function() {
+        console.log("Injected hrefs.");
+      });*/
+    }
+  }, interval);
+}
+
+function newInterval(interval, id) {
+  
+  // clear the existing interval
+  clearInterval(id);
+  // just start a new one
+  startInterval(interval);
+}
+
 // initializes typer
 // step is an integer, how many letters will be processed at a time
 // file is the path to .txt file "/txts/smth.txt"
@@ -126,21 +154,5 @@ function initTyper(step, file, speed) {
   Typer.file = file;
   Typer.init();
 
-  var interval = speed;
-  var timer = setInterval( function() {
-    Typer.addText({"KeyCode": 123748});
-    if (Typer.text) {
-      if (Typer.text.charAt(Typer.index) == '<')
-        interval = 1;
-      else if (Typer.text.charAt(Typer.index) == '>')
-        interval = speed;
-    }
-    console.log(interval);
-    if (Typer.text && Typer.index > Typer.text.length) {
-      clearInterval(timer);
-      /*$.getScript("/js/inject.js", function() {
-        console.log("Injected hrefs.");
-      });*/
-    }
-  }, interval);
+  startInterval(speed);
 }
