@@ -93,7 +93,6 @@ var Typer = {
 
     // save it in Typer.text
     Typer.text = command;
-    Typer.text = Typer.text.slice(0, Typer.text.length - 1);
 
     // if the last char is the blinking cursor
     if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") {
@@ -119,20 +118,12 @@ var Typer = {
 function startInterval(interval) {
   
   intervalID = setInterval(function() {
-    console.log(interval);
     Typer.addText({"KeyCode": 123748});
-    /*if (Typer.text) {
-      if (Typer.text.charAt(Typer.index) == '<')
-        newInterval(5, intervalID);
-      else if (Typer.text.charAt(Typer.index) == '>')
-        newInterval(interval, intervalID);
-    }*/
-    console.log(Typer.text.charAt(Typer.index));
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
-      /*$.getScript("/js/inject.js", function() {
+      $.getScript("/js/inject.js", function() {
         console.log("Injected hrefs.");
-      });*/
+      });
     }
   }, interval);
 }

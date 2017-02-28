@@ -10,7 +10,7 @@ Sotirios M. Roussis (xT) &#60;<a id="hem">xtonousou@gmail.com</a>&#62;
 echo "<a id="di">Arch Linux</a>"
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
 total 12
-drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="somelongidtotestnewjscodeihopethisworksmanfiiouh" href="/bio.html" onclick="Typer.append('cd bio/')">bio/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1" onclick="Typer.append('cd bio/')">bio/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdh2">contact/</a>
 drwxr-xr-- 7 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdh3">projects/</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>
