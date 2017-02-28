@@ -121,12 +121,13 @@ function startInterval(interval) {
   intervalID = setInterval(function() {
     console.log(interval);
     Typer.addText({"KeyCode": 123748});
-    if (Typer.text) {
+    /*if (Typer.text) {
       if (Typer.text.charAt(Typer.index) == '<')
         newInterval(5, intervalID);
       else if (Typer.text.charAt(Typer.index) == '>')
         newInterval(interval, intervalID);
-    }
+    }*/
+    console.log(Typer.text.charAt(Typer.index));
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
       /*$.getScript("/js/inject.js", function() {
