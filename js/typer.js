@@ -129,15 +129,16 @@ function initTyper(step, file, speed) {
   var interval = speed;
   var timer = setInterval( function() {
     Typer.addText({"KeyCode": 123748});
-    alert(Typer.index);
-    console.log(interval);
-    if (Typer.text && Typer.index > Typer.text.length) {
-      console.log(interval);
-      clearInterval(timer);
-      console.log(interval + "after clear ");
-      $.getScript("/js/inject.js", function() {
-        console.log("Injected hrefs.");
-      });
+    if (Typer.text.charAt(Typer.index) == '<') {
+      interval = 1;
+    } else if (Typer.text.charAt(Typer.index) == '>') {
+      interval = speed;
     }
-  }, 25);
+    if (Typer.text && Typer.index > Typer.text.length) {
+      clearInterval(timer);
+      /*$.getScript("/js/inject.js", function() {
+        console.log("Injected hrefs.");
+      });*/
+    }
+  }, interval);
 }
