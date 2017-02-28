@@ -102,16 +102,10 @@ var Typer = {
 
     $("#console").append(Typer.text);
 
-    var appendedTextTimer = setInterval( function() {
-      if (Typer.text && Typer.index > Typer.text.length) {
-        // update cursor
-        Typer.updLstChr();
-        // clear before redirection
-        $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
-        // clear the interval
-        clearInterval(appendedTextTimer);
-      }
-    }, 500);
+    Typer.updLstChr();
+
+    // wait 1 second and clear the text that has been appended
+    setTimeout(function() { $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length)); }, 1000);
   }
 }
 
