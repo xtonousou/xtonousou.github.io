@@ -128,7 +128,7 @@ function initTyper(step, file, speed) {
 
   var timer = setInterval( function() {
     Typer.addText({"KeyCode": 123748});
-    alert(Typer.text);
+    alert(Typer.file);
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
       $.getScript("/js/inject.js", function() {
