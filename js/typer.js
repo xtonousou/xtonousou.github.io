@@ -109,17 +109,12 @@ var Typer = {
         // update cursor
         Typer.updLstChr();
         // clear before redirection
-        cleanOnChange();
+        window.onbeforeunload = function() {
+          $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
+        };
       }
     }, 500);
   }
-}
-
-function cleanOnChange() {
-
-  window.onbeforeunload = function() {
-    $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
-  };
 }
 
 function startInterval(interval) {
