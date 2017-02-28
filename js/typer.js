@@ -134,6 +134,7 @@ function initTyper(step, file, speed) {
     } else if (Typer.text.charAt(Typer.index) == '>') {
       interval = speed;
     }
+    console.log(interval);
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(timer);
       /*$.getScript("/js/inject.js", function() {
