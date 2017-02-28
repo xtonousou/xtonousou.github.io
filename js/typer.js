@@ -123,7 +123,7 @@ function startInterval(interval) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text) {
       if (Typer.text.charAt(Typer.index) == '<')
-        newInterval(1, intervalID);
+        newInterval(5, intervalID);
       else if (Typer.text.charAt(Typer.index) == '>')
         newInterval(interval, intervalID);
     }
