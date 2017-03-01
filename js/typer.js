@@ -110,12 +110,6 @@ var Typer = {
       }
       $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
     }, 1000);
-
-    if (t.cleared) {
-      $.getScript("/js/inject.js", function() {
-        console.log("Injected hrefs.");
-      });
-    }
   }
 }
 
@@ -135,6 +129,9 @@ function startInterval(interval) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
+      $.getScript("/js/inject.js", function() {
+        console.log("Injected hrefs.");
+      });
     }
   }, interval);
 }
