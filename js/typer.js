@@ -113,9 +113,9 @@ function startInterval(interval) {
   intervalID = setInterval(function() {
     Typer.addText({"KeyCode": 123748});
     console.log(interval);
-    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "<")
+    if (Typer.content().substring(Typer.content().length - 3, Typer.content().length).includes("<"))
       newInterval(1, intervalID);
-    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == ">")
+    if (Typer.content().substring(Typer.content().length - 3, Typer.content().length).includes(">"))
       newInterval(interval, intervalID);
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
