@@ -117,6 +117,48 @@
   }
 }
 
+/* 2880px and less ------------------------------ */
+@media (max-width: 2880px) {
+
+  .container {
+    width: 1800px;
+    height: 1050px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 24px;
+  }
+}
+
+/* 2560px and less ------------------------------ */
+@media (max-width: 2560px) {
+
+  .container {
+    width: 1600px;
+    height: 933px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 20px;
+  }
+}
+
+/* 2048px and less ------------------------------ */
+@media (max-width: 2048px) {
+
+  .container {
+    width: 1280px;
+    height: 746px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 16px;
+  }
+}
+
 /* 1920px and less ------------------------------ */
 @media (max-width: 1920px) {
 
@@ -131,17 +173,31 @@
   }
 }
 
-/* 1200px and less ------------------------------ */
-@media (max-width: 1200px) {
+/* 1600px and less ------------------------------ */
+@media (max-width: 1600px) {
 
   .container {
-    width: 800px;
-    height: 466px;
+    width: 1000px;
+    height: 583px;
   }
 
   /* Console on the screen */
   #console {
-    font-size: 12px;
+    font-size: 8px;
+  }
+}
+
+/* 1368px and less ------------------------------ */
+@media (max-width: 1368px) {
+
+  .container {
+    width: 855px;
+    height: 497px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 4px;
   }
 }
 
