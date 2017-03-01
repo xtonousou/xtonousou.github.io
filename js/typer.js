@@ -104,7 +104,9 @@ var Typer = {
 
     Typer.updLstChr();
 
-    $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
+    setTimeout(function() {
+      $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
+    }, 1000);
   }
 }
 
