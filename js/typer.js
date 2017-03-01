@@ -103,7 +103,11 @@ var Typer = {
     $("#console").append(Typer.text);
 
     setTimeout(function() {
-      clearInterval(cursor);
+      // if the last char is the blinking cursor
+      if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") {
+        // remove it before removing the newly appended text
+        $("#console").html($("#console").html().substring(0, Typer.content().length - 1));
+      }
       $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
     }, 1000);
   }
