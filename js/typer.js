@@ -1,7 +1,7 @@
 // typing effect logic
 var Typer = {
   
-  text: null,
+  text: null, // the text container
 
   index: 0, // current cursor position
   speed: 2, // speed of the Typer
@@ -112,6 +112,11 @@ function startInterval(interval) {
   
   intervalID = setInterval(function() {
     Typer.addText({"KeyCode": 123748});
+    console.log(interval);
+    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "<")
+      newInterval(1, intervalID);
+    if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == ">")
+      newInterval(interval, intervalID);
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
       $.getScript("/js/inject.js", function() {
