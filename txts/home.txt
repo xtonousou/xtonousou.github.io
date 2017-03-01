@@ -7,7 +7,7 @@ Sotirios M. Roussis (xT) &#60;<a id="hem" onclick="Typer.append('$BROWSER mailto
 /Earth/Europe/Greece/Attiki/Athens
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh
 #!/usr/bin/env bash
-echo "<a id="di">Arch Linux</a>"
+echo "<a id="hdi" onclick="Typer.append('$BROWSER https://www.archlinux.org')">Arch Linux</a>"
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
 total 12
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1" onclick="Typer.append('cd bio/')">bio/</a>
