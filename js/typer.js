@@ -11,7 +11,7 @@ var Typer = {
   init: function() {
     
     // inizialize timer for blinking cursor
-    var cursor = setInterval(function() {
+    setInterval(function() {
         Typer.updLstChr();
       }, 650
     );
@@ -115,7 +115,7 @@ var Typer = {
 
 function startInterval(interval) {
   
-  var intervalID = setInterval(function() {
+  intervalID = setInterval(function() {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
