@@ -1,3 +1,7 @@
+html, body {
+  padding: 0;
+}
+
 body {
   background: #FFFFFF; /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #FFFFFF 0%, #F6F6F6 47%, #EDEDED 100%); /* FF3.6-15 */
