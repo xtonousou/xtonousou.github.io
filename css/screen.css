@@ -1,10 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Mono);
 
 /* The container that defines the dimenions of the monitor - used in media queries */
-/* 8K */
+/* 4K */
 .container {
-  width: 4560px;
-  height: 2660px;
+  width: 2400px;
+  height: 1400px;
   margin: 0 auto;
 }
 
@@ -68,11 +68,11 @@
 }
 
 /* Console on the screen */
-/* 64px for 8K */
+/* 32px for 4K */
 #console {
   font-family: 'Roboto Mono';
   color: #C2C2C2;
-  font-size: 64px;
+  font-size: 32px;
   padding: 1em;
   line-height: 1.2;
 }
