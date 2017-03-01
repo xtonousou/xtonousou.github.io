@@ -116,9 +116,6 @@ function startInterval(interval) {
     Typer.addText({"KeyCode": 123748});
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
-      $.getScript("/js/inject.js", function() {
-        console.log("Injected hrefs.");
-      });
     }
   }, interval);
 }
