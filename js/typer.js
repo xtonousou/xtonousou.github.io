@@ -118,8 +118,8 @@ function Timeout(fn, interval) {
   var timeoutID = setTimeout(fn, interval);
   this.cleared = false;
   this.clear = function () {
-      this.cleared = true;
-      clearTimeout(timeoutID);
+    this.cleared = true;
+    clearTimeout(timeoutID);
   };
 }
 
