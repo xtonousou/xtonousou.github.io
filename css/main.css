@@ -7,7 +7,6 @@ body {
   background: -moz-radial-gradient(center, ellipse cover, #FFFFFF 0%, #F6F6F6 47%, #EDEDED 100%); /* FF3.6-15 */
   background: -webkit-radial-gradient(center, ellipse cover, #FFFFFF 0%, #F6F6F6 47%, #EDEDED 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, #FFFFFF 0%, #F6F6F6 47%, #EDEDED 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EDEDED',GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
 
 a {
