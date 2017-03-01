@@ -4,7 +4,7 @@ var Typer = {
   text: null, // the text container
 
   index: 0, // current cursor position
-  speed: 2, // speed of the Typer
+  speed: 2, // how many characters to process at each time from the txt file
   file: "", // file, must be setted
 
   // inizialize Hacker Typer
@@ -112,11 +112,6 @@ function startInterval(interval) {
   
   intervalID = setInterval(function() {
     Typer.addText({"KeyCode": 123748});
-    console.log(interval);
-    if (Typer.content().substring(Typer.content().length - 3, Typer.content().length).includes("<"))
-      newInterval(1, intervalID);
-    if (Typer.content().substring(Typer.content().length - 3, Typer.content().length).includes(">"))
-      newInterval(interval, intervalID);
     if (Typer.text && Typer.index > Typer.text.length) {
       clearInterval(intervalID);
       $.getScript("/js/inject.js", function() {
