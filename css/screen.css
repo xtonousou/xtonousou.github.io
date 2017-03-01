@@ -103,6 +103,20 @@
   border-radius: 5px;
 }
 
+/* 3200px and less ------------------------------ */
+@media (max-width: 3200px) {
+
+  .container {
+    width: 2000px;
+    height: 1800px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 30px;
+  }
+}
+
 /* 1920px and less ------------------------------ */
 @media (max-width: 1920px) {
 
@@ -114,5 +128,19 @@
   /* Console on the screen */
   #console {
     font-size: 16px;
+  }
+}
+
+/* 1280px and less ------------------------------ */
+@media (max-width: 1280px) {
+
+  .container {
+    width: 800px;
+    height: 466px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 12px;
   }
 }
