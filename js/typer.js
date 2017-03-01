@@ -102,7 +102,7 @@ var Typer = {
 
     $("#console").append(Typer.text);
 
-    setTimeout(function() {
+    var t = new Timeout(function () {
       // if the last char is the blinking cursor
       if (Typer.content().substring(Typer.content().length - 1, Typer.content().length) == "_") {
         // remove it before removing the newly appended text
@@ -110,7 +110,23 @@ var Typer = {
       }
       $("#console").html($("#console").html().substring(0, Typer.content().length - Typer.text.length));
     }, 1000);
+
+    if (t.cleared) {
+      $.getScript("/js/inject.js", function() {
+        console.log("Injected hrefs.");
+      });
+    }
   }
+}
+
+function Timeout(fn, interval) {
+  
+  var timeoutID = setTimeout(fn, interval);
+  this.cleared = false;
+  this.clear = function () {
+      this.cleared = true;
+      clearTimeout(timeoutID);
+  };
 }
 
 function startInterval(interval) {
@@ -123,6 +139,10 @@ function startInterval(interval) {
   }, interval);
 }
 
+
+// clears an old interval and starts a new one
+// interval is an integer
+// id is the interval id
 function newInterval(interval, id) {
   
   // clear the existing interval
