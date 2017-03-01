@@ -34,8 +34,8 @@ Networking
 System Administration
 Unix
 Web Development
-<span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
+<span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-laF
 total 8
-drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdb1">./</a>
-drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdb2">../</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdb1" onclick="Typer.append('cd ./')">./</a>
+drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdb2" onclick="Typer.append('cd ../')">../</a>
 <span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span>
