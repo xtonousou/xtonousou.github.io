@@ -7,13 +7,6 @@
   margin: 0 auto;
 }
 
-/* The container that defines the dimenions of the monitor - used in media queries 
-.container {
-  width: 1200px;
-  height: 700px;
-  margin: 0 auto;
-}*/
-
 /* Black monitor outline */
 .monitor {
   padding: 4%;
@@ -108,6 +101,19 @@
   border-radius: 5px;
 }
 
+/* 1920px and less ------------------------------ */
+@media (max-width: 1920px) {
+
+  .container {
+    width: 1200px;
+    height: 700px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 12px;
+  }
+}
 
 /* 1200px and less ------------------------------ */
 @media (max-width: 1200px) {
