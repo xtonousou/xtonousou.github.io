@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Mono);
 
 /* The container that defines the dimenions of the monitor - used in media queries */
-/* 8K optimized */
+/* 8K */
 .container {
   width: 4800px;
   height: 2800px;
@@ -102,6 +102,21 @@
   margin-top: 29%;
   border-radius: 5px;
 }
+
+/* 5120px and less ------------------------------ */
+@media (max-width: 3200px) {
+
+  .container {
+    width: 3200px;
+    height: 1866px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 60px;
+  }
+}
+
 
 /* 3200px and less ------------------------------ */
 @media (max-width: 3200px) {
