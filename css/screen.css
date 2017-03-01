@@ -113,7 +113,21 @@
 
   /* Console on the screen */
   #console {
-    font-size: 30px;
+    font-size: 28px;
+  }
+}
+
+/* 2880px and less ------------------------------ */
+@media (max-width: 2880px) {
+
+  .container {
+    width: 1800px;
+    height: 1050px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 24px;
   }
 }
 
