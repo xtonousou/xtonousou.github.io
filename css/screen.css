@@ -113,7 +113,7 @@
 
   /* Console on the screen */
   #console {
-    font-size: 28px;
+    font-size: 27px;
   }
 }
 
@@ -121,13 +121,13 @@
 @media (max-width: 2880px) {
 
   .container {
-    width: 1800px;
-    height: 1050px;
+    width: 1795px;
+    height: 1000px;
   }
 
   /* Console on the screen */
   #console {
-    font-size: 24px;
+    font-size: 23px;
   }
 }
 
