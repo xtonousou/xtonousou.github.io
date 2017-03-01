@@ -3,8 +3,8 @@
 /* The container that defines the dimenions of the monitor - used in media queries */
 /* 8K */
 .container {
-  width: 4320px;
-  height: 2520px;
+  width: 4560px;
+  height: 2660px;
   margin: 0 auto;
 }
 
