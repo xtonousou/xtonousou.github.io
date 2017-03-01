@@ -1,4 +1,4 @@
-<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
+<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-laF
 total 40
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdc1" onclick="Typer.append('cd ./')">./</a>
 drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdc2" onclick="Typer.append('cd ../')">../</a>
