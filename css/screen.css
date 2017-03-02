@@ -1,5 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Mono);
 
+/* Console on the screen */
+#console {
+  font-family: 'Roboto Mono';
+  color: #E9E9E9;
+  font-size: 32px; /* For 4K */
+  padding: 1em;
+  line-height: 1.2;
+}
+
 /* The container that defines the dimenions of the monitor - used in media queries */
 /* 4K */
 .container {
@@ -65,16 +74,6 @@
   right: 0;
   top: 6%;
   width: 4%;
-}
-
-/* Console on the screen */
-/* 32px for 4K */
-#console {
-  font-family: 'Roboto Mono';
-  color: #C2C2C2;
-  font-size: 32px;
-  padding: 1em;
-  line-height: 1.2;
 }
 
 /* Stand */
