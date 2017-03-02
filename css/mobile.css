@@ -1,12 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Roboto+Mono);
-
 body {
   background-color: #000000;
 }
 
 /* Console on the screen */
 #console {
-  font-family: 'Roboto Mono';
+  font-family: 'monospace';
   color: #E9E9E9;
   font-size: 15px; /* For mobiles */
   padding: 1em;
