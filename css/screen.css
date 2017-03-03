@@ -2,7 +2,7 @@
 #console {
   font-family: 'Ubuntu Mono';
   color: #E9E9E9;
-  font-size: 32px; /* For 4K */
+  font-size: 36px; /* For 4K */
   padding: 1em;
   line-height: 1.2;
 }
@@ -110,6 +110,21 @@
 
   /* Console on the screen */
   #console {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
+
+/* 1366px and less ------------------------------ */
+@media (max-width: 1366px) {
+
+  .container {
+    width: 850px;
+    height: 494px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 14px;
+  }
+}
+
