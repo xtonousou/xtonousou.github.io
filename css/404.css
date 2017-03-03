@@ -17,8 +17,7 @@ h1 {
 main {
   color: #F5F5F5;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   font-size: 80%;
   text-align: left;
   /*font-size: 30px; /* For 4K */
