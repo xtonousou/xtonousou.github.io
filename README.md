@@ -2,6 +2,8 @@
 
 > A terminal-like personal website made (*more like modified*) with :heart: by **xToNouSou**
 
+![Mockup](https://raw.github.com)
+
 #### Content
 
 Résumé, information and other stuff about myself :smirk_cat:
