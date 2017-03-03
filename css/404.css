@@ -2,7 +2,6 @@
   font-family: 'monospace';
   text-align: center;
   color: #E9E9E9;
-  /*font-size: 32px; /* For 4K */
   line-height: 1.2;
 }
 
@@ -12,20 +11,31 @@ body {
 
 h1 {
   font-weight: bold;
+  font-size: 96px;
 }
 
 main {
   color: #F5F5F5;
-  display: block;
-  margin: 0 auto;
-  font-size: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19em;
+  font-size: 64px;
   text-align: left;
-  /*font-size: 30px; /* For 4K */
 }
 
 div {
   display: inline;
-  /*display: inline-block; */
+}
+
+img {
+  opacity: 0;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+main:hover > img {
+  opacity: 0.8;
 }
 
 .shebang {
@@ -42,8 +52,42 @@ div {
 
 .syntax {
   color: #E12D66;
+  font-weight: bold;
 }
 
 .string {
   color: #65FF00;
+}
+
+@media (max-width: 1920px) {
+
+  h1 {
+    font-size: 48px;
+  }
+
+  main {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 23px;
+  }
+
+  main {
+    font-size: 18px;
+  }
 }
