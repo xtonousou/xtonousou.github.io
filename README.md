@@ -2,7 +2,7 @@
 
 > A terminal-like personal website made (*more like modified*) with :heart: by **xToNouSou**
 
-![Mockup](https://raw.github.com)
+![Mockup](https://raw.githubusercontent.com/xtonousou/xtonousou.github.io/master/imgs/mockup.png)
 
 #### Content
 
