@@ -28,7 +28,16 @@ div {
   display: inline;
 }
 
-
+img {
+  opacity: 0;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+ 
+main:hover > img {
+  opacity: 0.8;
+}
 
 .shebang {
   color: #777777;
