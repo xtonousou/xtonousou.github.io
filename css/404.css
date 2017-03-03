@@ -1,0 +1,40 @@
+* {
+  font-family: 'monospace';
+  text-align: center;
+  color: #E9E9E9;
+  /*font-size: 32px; /* For 4K */
+  line-height: 1.2;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+main {
+  color: #F5F5F5;
+  /*font-size: 30px; /* For 4K */
+}
+
+.shebang {
+  color: #777777;
+}
+
+.operator {
+  color: #747E9E;
+}
+
+.number {
+  color: #FF8000;
+}
+
+.syntax {
+  color: #E12D66;
+}
+
+.string {
+  color: #65FF00;
+}
