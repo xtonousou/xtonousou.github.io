@@ -19,6 +19,11 @@ main {
   /*font-size: 30px; /* For 4K */
 }
 
+div {
+  display: inline;
+  /*display: inline-block; */
+}
+
 .shebang {
   color: #777777;
 }
