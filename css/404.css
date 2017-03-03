@@ -16,8 +16,11 @@ h1 {
 
 main {
   color: #F5F5F5;
-  margin: auto; /* should declare !DOCTYPE otherwise RIP IE8 */
-  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 80%;
+  width: 35%;
   padding: 15px;
   text-align: left;
   /*font-size: 30px; /* For 4K */
