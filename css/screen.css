@@ -118,13 +118,13 @@
 @media (max-width: 1366px) {
 
   .container {
-    width: 970px;
-    height: 564px;
+    width: 1025px;
+    height: 596px;
   }
 
   /* Console on the screen */
   #console {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
