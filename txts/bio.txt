@@ -5,11 +5,10 @@ Dept. of Computer &amp; Informatics Engineering
 <b>Operating Systems</b>
 &nbsp;GNU/Linux, Mac OSX, Windows
 <b>Programming Languages</b>
-&nbsp;Bash, Basic, C/C++, CSS, HTML, Java, Javascript(+jQuery), Matlab, MySQL, Perl, PHP, Python, Ruby
-<b>Fond Of</b>
+&nbsp;Bash, Basic, C/C++, CSS, HTML, Java, Javascript(+jQuery+NodeJS), Matlab, MySQL, Perl, PHP, Python, Ruby
+<b>Familiar With</b>
 &nbsp;Git VCS
 &nbsp;Gradle, Maven build tools
-<b>Familiar With</b>
 &nbsp;Android Studio
 &nbsp;Drupal, Joomla, Wordpress CMS
 &nbsp;Microsoft/Libre Office
