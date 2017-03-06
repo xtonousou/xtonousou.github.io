@@ -29,6 +29,7 @@ switch (document.title) {
     document.getElementById('cdp1').href = "javascript:window.location.reload();";
     document.getElementById('cdp2').href = "/index.html";
     document.getElementById('pa').href = "https://github.com/v1s1t0r1sh3r3/airgeddon";
+    document.getElementById('pga').href = "https://github.com/xtonousou/get-airgeddon";
     document.getElementById('pm').href = "https://github.com/xtonousou/madubi";
     document.getElementById('ps').href = "https://github.com/xtonousou/.scripts";
     document.getElementById('psh').href = "https://github.com/xtonousou/shIP";
