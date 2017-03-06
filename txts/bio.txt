@@ -29,6 +29,7 @@ Cryptography
 Data Mining
 Free and Open Source Software
 Information Security
+Machine Learning
 Networking
 System Administration
 Unix
