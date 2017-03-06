@@ -39,7 +39,7 @@ b {
 #cdh1, #cdh2, #cdh3,
 #cdb1, #cdb2,
 #cdc1, #cdc2,
-#cdp1, #cdp2, #pa, #pm, #ps, #psh, #pxs {
+#cdp1, #cdp2, #pa, #pga, #pm, #ps, #psh, #pxs {
   color: #0F74B8;
   font-weight: bold;
   text-decoration: none;
@@ -49,7 +49,7 @@ b {
 #cdh1:hover, #cdh2:hover, #cdh3:hover,
 #cdb1:hover, #cdb2:hover,
 #cdc1:hover, #cdc2:hover,
-#cdp1:hover, #cdp2:hover, #pa:hover, #pm:hover, #ps:hover, #psh:hover, #pxs:hover {
+#cdp1:hover, #cdp2:hover, #pa:hover, #pga:hover, #pm:hover, #ps:hover, #psh:hover, #pxs:hover {
   color: #32FFFF;
   text-decoration: underline;
 }
