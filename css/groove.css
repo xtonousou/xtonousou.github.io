@@ -35,7 +35,7 @@ main:hover > img {
   opacity: 0.8;
 }
 
- background: linear-gradient(270deg, #f75fa7, #f6519a, #5c2d3e);
+background: linear-gradient(270deg, #f75fa7, #f6519a, #5c2d3e);
 background-size: 600% 600%;
 
 -webkit-animation: AnimationName 0s ease infinite;
