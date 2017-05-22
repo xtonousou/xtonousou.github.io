@@ -12,5 +12,5 @@ echo "<a id="hdi" onclick="Typer.append('$BROWSER https://www.archlinux.org')">A
 total 12
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1" onclick="Typer.append('cd bio/')">bio/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdh2" onclick="Typer.append('cd contact/')">contact/</a>
-drwxr-xr-- 8 xtonousou xtonousou 4096 Mar &nbsp;7 00:08 <a id="cdh3" onclick="Typer.append('cd projects/')">projects/</a>
+drwxr-xr-- 9 xtonousou xtonousou 4096 May 22 11:35 <a id="cdh3" onclick="Typer.append('cd projects/')">projects/</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>
