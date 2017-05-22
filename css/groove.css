@@ -1,0 +1,69 @@
+* {
+  text-align: center;
+  color: #F54083;
+  line-height: 1.2;
+}
+
+body {
+  background-color: #262129;
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 96px;
+}
+
+main {
+  color: #F6519A;
+  margin-left: auto;
+  margin-right: auto;
+  width: 19em;
+  font-family: 'Ubuntu Mono';
+  font-size: 64px;
+  text-align: left;
+}
+
+img {
+  opacity: 0;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+ 
+main:hover > img {
+  opacity: 0.8;
+}
+
+@media (max-width: 1920px) {
+
+  h1 {
+    font-size: 48px;
+  }
+
+  main {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  main {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 23px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+}

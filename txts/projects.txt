@@ -3,6 +3,7 @@ total 32
 drwxr-xr-- 8 xtonousou xtonousou 4096 Feb 25 01:20 <a id="cdp1" onclick="Typer.append('cd ./')">./</a>
 drwxr-xr-- 6 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdp2" onclick="Typer.append('cd ../')">../</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="pa" onclick="Typer.append('cd airgeddon/')">airgeddon/</a>
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="pcs" href="/groove.html" onclick="Typer.append('cd color_scheme/')">color_scheme/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Mar &nbsp;7 00:08 <a id="pga" onclick="Typer.append('cd get-airgeddon/')">get-airgeddon/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="pm" onclick="Typer.append('cd madubi/')">madubi/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 25 01:20 <a id="ps" onclick="Typer.append('cd .scripts/')">.scripts/</a>
