@@ -5,6 +5,7 @@
 }
 
 img {
+  float: center;
   display: block;
   margin: auto;
   border: 0;
