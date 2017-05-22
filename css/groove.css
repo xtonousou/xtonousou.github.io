@@ -24,3 +24,21 @@ img {
   top: 0;
   left: 0;
 }
+
+/* 1920px and less ------------------------------ */
+@media (max-width: 1920px) {
+
+  img {
+    width: 85%;
+    height: 85%;
+  }
+}
+
+/* 1366px and less ------------------------------ */
+@media (max-width: 1366px) {
+
+  img {
+    width: 75%;
+    height: 75%;
+  }
+}
