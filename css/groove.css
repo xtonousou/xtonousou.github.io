@@ -1,93 +1,22 @@
-* {
-  text-align: center;
-  line-height: 1.2;
-}
-
-h1 {
-  font-family: 'Ubuntu';
-  font-weight: bold;
-  font-size: 96px;
-}
-
-main {
-  color: #F6519A;
-  margin-left: auto;
-  margin-right: auto;
-  width: 19em;
-  font-family: 'Ubuntu Mono';
-  font-size: 64px;
-  text-align: left;
-}
-
-img {
-  opacity: 0;
-  display: block;
-  margin: auto;
-  width: 100%;
-}
- 
-main:hover > img {
-  opacity: 1;
-}
-
-background: linear-gradient(270deg, #f75fa7, #f6519a, #5c2d3e);
+background: linear-gradient(317deg, #f75fa7, #f6519a, #5c2d3e);
 background-size: 600% 600%;
 
 -webkit-animation: AnimationName 0s ease infinite;
 -moz-animation: AnimationName 0s ease infinite;
--o-animation: AnimationName 0s ease infinite;
 animation: AnimationName 0s ease infinite;
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
 }
 @-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-o-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
 }
 @keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-@media (max-width: 1920px) {
-
-  h1 {
-    font-size: 48px;
-  }
-
-  main {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 1366px) {
-
-  h1 {
-    font-size: 32px;
-  }
-
-  main {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 1024px) {
-
-  h1 {
-    font-size: 23px;
-  }
-
-  main {
-    font-size: 18px;
-  }
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
 }
