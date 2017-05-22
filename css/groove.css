@@ -28,17 +28,27 @@ img {
 /* 1920px and less ------------------------------ */
 @media (max-width: 1920px) {
 
-  img {
-    width: 35%;
-    height: 40%;
+  #gif {
+    width: 28%;
+    height: 28%;
+  }
+
+  #scheme {
+    width: 32%;
+    height: 30%;
   }
 }
 
 /* 1366px and less ------------------------------ */
 @media (max-width: 1366px) {
 
-  img {
-    width: 75%;
-    height: 75%;
+  #gif {
+    width: 23%;
+    height: 23%;
+  }
+
+  #scheme {
+    width: 27%;
+    height: 25%;
   }
 }
