@@ -25,3 +25,57 @@ img {
   top: 0;
   left: 0;
 }
+
+.img-1 {
+  width: 27%;
+}
+
+.img-2 {
+  width: 30%;
+}
+
+.blurred:hover ~ .img-2 {
+  animation-name: animate-blur;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes animate-blur {
+  0% {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  100% {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+}
+
+.img-1:hover {  
+  animation-name: animate-trippy;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animate-trippy {
+  0% {
+    filter: hue-rotate(0deg) saturate(2);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(2);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+    /* For mobile phones: */
+    [class*="img-"] {
+        width: 50%;
+    }
+}
