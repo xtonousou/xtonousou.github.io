@@ -1,11 +1,6 @@
 * {
   text-align: center;
-  color: #F54083;
   line-height: 1.2;
-}
-
-body {
-  background-color: #262129;
 }
 
 h1 {
@@ -32,7 +27,7 @@ img {
 }
  
 main:hover > img {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 background: linear-gradient(270deg, #f75fa7, #f6519a, #5c2d3e);
