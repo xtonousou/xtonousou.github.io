@@ -1,17 +1,32 @@
-## :computer: xT3rm
+Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
+=========================
 
-> A terminal-like personal website made (*more like modified*) with :heart: by **xToNouSou**
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
 
-![Mockup](https://raw.githubusercontent.com/xtonousou/xtonousou.github.io/master/imgs/mockup.png)
+## How to use
+ - Place a image in `/img/portfolio/`
+ - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
+```txt
+---
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: cabin.png
+alt: image-alt
+project-date: July 2014
+client: The Client
+category: Web Development
+description: The description of the project
 
-#### Content
+---
+```
 
-Résumé, information and other stuff about myself :smirk_cat:
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.github.io/freelancer-theme)
 
-Photos, videos and other media are coming soon... :metal:
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
-#### Inspiration
-
-Make sure to check out [jeffweisbein]
-
-[jeffweisbein]: https://www.jeffweisbein.com/
+---------
+For more details, read the [documentation](http://jekyllrb.com/)
