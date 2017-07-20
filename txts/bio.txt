@@ -4,8 +4,15 @@ Dept. of Computer &amp; Informatics Engineering
 <span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p5l33p5l33p -->skills
 <b>Operating Systems</b>
 &nbsp;GNU/Linux, Mac OSX, Windows
-<b>Programming Languages</b>
-&nbsp;Bash, Basic, C/C++, CSS, HTML(+Bootstrap), Java, Javascript(+jQuery+NodeJS), Matlab, MySQL, Perl, PHP, Python, Ruby
+<b>Programming Languages (Sorted by experience and knowledge)</b>
+Expert:
+&nbsp;Bash, HTML(+Bootstrap), Java(+WebServices), Javascript(+Ajax+jQuery+NodeJS), Python(+CPython+PyPy+Numba)
+Mediocre:
+&nbsp; C(+OpenMP+MPI), CSS, MySQL(+MariaDB+MongoDB)
+Newbie:
+&nbsp; Basic, C++, Lua, Matlab, Perl, PHP, Ruby(+RubyOnRails)
+Would Like To Learn:
+&nbsp; COBOL, FORTRAN, Pascal
 <b>Familiar With</b>
 &nbsp;Git VCS
 &nbsp;Gradle, Maven build tools
@@ -21,21 +28,15 @@ Greek - Native
 English - Professional working proficiency
 French - Elementary proficiency
 <span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p5l33p5l33p5l33p -->interests
-Android
-Bioinformatics
-Chemistry
-Cloud Programming
-Cryptography
-Data Mining
-Free and Open Source Software
-Information Security
-Machine Learning
-Networking
-System Administration
-Unix
-Web Development
+Android, Bioinformatics, Chemistry, Cloud Programming
+Cryptography, Database Management and Programming,
+Data Mining, Free and Open Source Software,
+Information Security, Machine Learning,
+Networking, Privacy, System Administration,
+Unix, User Experience, Web Development,
+Web Scraping
 <span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-laF
-total 8
+total 11
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdb1" onclick="Typer.append('cd ./')">./</a>
-drwxr-xr-- 5 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdb2" onclick="Typer.append('cd ../')">../</a>
+drwxr-xr-- 9 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdb2" onclick="Typer.append('cd ../')">../</a>
 <span id="u">xtonousou</span>:<span id="d">~/bio</span><span id="s">$ </span>

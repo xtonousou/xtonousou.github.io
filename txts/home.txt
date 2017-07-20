@@ -7,10 +7,14 @@ Sotirios M. Roussis (xT) &#60;<a id="hem" onclick="Typer.append('$BROWSER mailto
 /Earth/Europe/Greece/Attiki/Athens
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh
 #!/usr/bin/env bash
-echo "<a id="hdi" onclick="Typer.append('$BROWSER https://www.archlinux.org')">Arch Linux</a>"
+if [ "${LOCATION}" = "${WORK}" ]; then
+  echo "<a id="hdiw" onclick="Typer.append('$BROWSER https://www.centos.org')">CentOS</a>";
+else
+  echo "<a id="hdih" onclick="Typer.append('$BROWSER https://www.archlinux.org')">Arch Linux</a>";
+fi
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
-total 12
+total 13
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1" onclick="Typer.append('cd bio/')">bio/</a>
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdh2" onclick="Typer.append('cd contact/')">contact/</a>
-drwxr-xr-- 8 xtonousou xtonousou 4096 Mar &nbsp;7 00:08 <a id="cdh3" onclick="Typer.append('cd projects/')">projects/</a>
+drwxr-xr-- 9 xtonousou xtonousou 4096 Jul 20 15:40 <a id="cdh3" onclick="Typer.append('cd projects/')">projects/</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span>
