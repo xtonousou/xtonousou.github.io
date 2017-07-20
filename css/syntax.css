@@ -1,0 +1,20 @@
+.shebang {
+  color: #777777;
+}
+
+.operator {
+  color: #747E9E;
+}
+
+.number {
+  color: #FF8000;
+}
+
+.syntax {
+  color: #E12D66;
+  font-weight: bold;
+}
+
+.string {
+  color: #65FF00;
+}
