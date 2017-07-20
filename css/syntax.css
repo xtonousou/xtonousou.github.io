@@ -1,20 +1,20 @@
-.shebang {
+#sb {
   color: #777777;
 }
 
-.operator {
+#op {
   color: #747E9E;
 }
 
-.number {
+#nu {
   color: #FF8000;
 }
 
-.syntax {
+#sy {
   color: #E12D66;
   font-weight: bold;
 }
 
-.string {
+#st {
   color: #65FF00;
 }

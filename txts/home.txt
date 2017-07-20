@@ -6,12 +6,12 @@ Sotirios M. Roussis (xT) &#60;<a id="hem" onclick="Typer.append('$BROWSER mailto
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->pwd
 /Earth/Europe/Greece/Attiki/Piraeus
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh
-#!/usr/bin/env bash
-if [ "${LOCATION}" = "${WORK}" ]; then
-&nbsp;&nbsp;echo "<a id="hdiw" onclick="Typer.append('$BROWSER https://www.centos.org')">CentOS</a>";
-else
-&nbsp;&nbsp;echo "<a id="hdih" onclick="Typer.append('$BROWSER https://www.archlinux.org')">Arch Linux</a>";
-fi
+<b id="sb">#!/usr/bin/env bash</b>
+<b id="sy">if</b> <b id="op">[</b> <b id="st">"${LOCATION}"</b> <b id="op">=</b> <b id="st">"${WORK}"</b> <b id="op">];</b> <b id="sy">then</b>
+&nbsp;&nbsp;echo <b id="st">"<a id="hdiw" onclick="Typer.append('$BROWSER https://www.centos.org')">CentOS</a>"</b><b id="op">;</b>
+<b id="sy">else</b>
+&nbsp;&nbsp;echo <b id="sy">"<a id="hdih" onclick="Typer.append('$BROWSER https://www.archlinux.org')">Arch Linux</a>"</b><b id="op">;</b>
+<b id="sy">fi</b>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-lF
 total 13
 drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 22:14 <a id="cdh1" onclick="Typer.append('cd bio/')">bio/</a>
