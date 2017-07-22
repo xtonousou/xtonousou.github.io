@@ -1,8 +1,8 @@
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p -->bash <!-- 5l33p5l33p -->--login
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->gpg --fingerprint <!-- 5l33p5l33p5l33p -->"$(whoami)"
-pub 4096R/A4C5AEA1 2017-02-24
-520D 1278 FA15 1515 53C0 385C 3014 DA54 A4C5 AEA1
-Sotirios M. Roussis (xT) &#60;<a id="hem" onclick="Typer.append('$BROWSER mailto:xtonousou@gmail.com')">xtonousou@gmail.com</a>&#62;
+fingerprint: D756 725D E038 E581 746B F367 AAAA 3367 00EE 7538
+64-bit: AAAA 3367 00EE 7538
+curl/raw: this key
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->pwd
 /Earth/Europe/Greece/Attiki/Piraeus
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh
