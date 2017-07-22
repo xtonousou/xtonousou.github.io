@@ -35,6 +35,12 @@ b {
   text-decoration: none;
 }
 
+#hpk:hover {
+  color: #A5FF78;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Color for directories and pseudo-directories */
 #cdh1, #cdh2, #cdh3,
 #cdb1, #cdb2,

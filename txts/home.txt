@@ -2,7 +2,7 @@
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->gpg --fingerprint <!-- 5l33p5l33p5l33p -->"$(whoami)"
 fingerprint: D756 725D E038 E581 746B F367 AAAA 3367 00EE 7538
 64-bit: AAAA 3367 00EE 7538
-curl/raw: this key
+curl/raw: <a id="hpk>"this key</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->pwd
 /Earth/Europe/Greece/Attiki/Piraeus
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh

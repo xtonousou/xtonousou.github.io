@@ -3,6 +3,7 @@
 // based on document.title
 switch (document.title) {
   case "/home/xtonousou":
+    document.getElementById('hpk').href = "/public_key.asc";
     document.getElementById('hdih').href = "https://www.archlinux.org";
     document.getElementById('hdiw').href = "https://www.centos.org";
     document.getElementById('cdh1').href = "/bio.html";
