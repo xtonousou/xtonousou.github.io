@@ -1,8 +1,9 @@
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p -->bash <!-- 5l33p5l33p -->--login
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->gpg --fingerprint <!-- 5l33p5l33p5l33p -->"$(whoami)"
-fingerprint: D756 725D E038 E581 746B F367 AAAA 3367 00EE 7538
-64-bit: AAAA 3367 00EE 7538
-curl/raw: <a id="hpk">this key</a>
+pub&nbsp;&nbsp;&nbsp;rsa4096&nbsp;2017-07-22&nbsp;[SC]&nbsp;[expires:&nbsp;2033-07-18]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D756&nbsp;725D&nbsp;E038&nbsp;E581&nbsp;746B&nbsp;&nbsp;F367&nbsp;AAAA&nbsp;3367&nbsp;00EE&nbsp;7538
+uid&nbsp;&nbsp;&nbsp;Sotirios&nbsp;M.&nbsp;Roussis&nbsp;&#60;xtonousou@gmail.com&#62;
+raw&nbsp;&nbsp;&nbsp;<a id="hpk">public_key.asc</a>
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p -->pwd
 /Earth/Europe/Greece/Attiki/Piraeus
 <span id="u">xtonousou</span>:<span id="d">~</span><span id="s">$ </span><!-- 5l33p5l33p5l33p -->cat &#60; <!-- 5l33p -->distro.sh
