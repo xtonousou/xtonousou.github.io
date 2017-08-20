@@ -1,123 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>&#128039; Sotirios Roussis &#40;xtonousou&#41;</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img alt="Brand" src="assets/images/nav-logo.png">
-        </a>
+---
+layout: default
+---
+<header class="site-header">
+  <div class="site-header-container">
+    <img class="site-avatar" src="{{ "img/me.png" | prepend: site.baseurl }}">
+    <span class="content">
+      <span class="site-title">
+        <span class="site-name">{{ site.person_name }}</span>
+        <span class="site-nickname">({{ site.person_nickname }})</span>
+        <span class="site-description">{{ site.description }}</span>
+      </span>
+      <div class="site-links">
+        <a href="mailto:{{ site.email }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'email', this.href]);"><i class="fa fa-envelope"></i><span class="link-text">email</span></a>
+        <a href="https://facebook.com/{{ site.facebook_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'facebook', this.href]);"><i class="fa fa-facebook"></i><span class="link-text">facebook</span></a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'twitter', this.href]);"><i class="fa fa-twitter"></i><span class="link-text">twitter</span></a>
+        <a href="https://github.com/{{ site.github_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'github', this.href]);"><i class="fa fa-github"></i><span class="link-text">github</span></a>
+        <a href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'stackoverflow', this.href]);"><i class="fa fa-stack-overflow"></i><span class="link-text">stackoverflow</span></a>
+        <a href="https://open.spotify.com/user/{{ site.spotify_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'spotify', this.href]);"><i class="fa fa-spotify"></i><span class="link-text">spotify</span></a>
+        <a href="https://youtube.com/user/{{ site.youtube_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'youtube', this.href]);"><i class="fa fa-youtube"></i><span class="link-text">youtube</span></a>
+        <!--
+        <a href="{{ site.vcard_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'resume', this.href]);"><i class="fa fa-user"></i><span class="link-text">vcard</span></a>
+        <a href="{{ site.cv_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'vcard', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv (pdf)</span></a>
+        -->
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
-        <ul class="nav nasmar v navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!-- CAROUSEL -->
-  <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#portfolio-carousel" data-slide-to="1"></li>
-      <li data-target="#portfolio-carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Hi, I am Sotiris</h1>
-            <p>Sublime Text, IntelliJ, Geany, vim</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Passionate</h1>
-            <p>It is my enthusiasm, my drive and my motivation</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Knowledge Hunter</h1>
-            <p>Always trying to find something new to learn.
-              <br>
-              <small>I know that I know nothing &#8210; Trial of Socrates</small>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    </span>
   </div>
-
-  <!-- MARKETING COLUMNS -->
-  <div class="marketing">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-md-4">
-          <span class="glyphicon glyphicon-globe"></span>
-          <h2>Full Stack Developer</h2>
-          <p>Comfortable with working with all the important technologies</p>
-        </div>
-        <div class="col-sm-4 col-md-4">
-          <span class="glyphicon glyphicon-cog"></span>
-          <h2>System Administrator</h2>
-          <p>Pretty much anything other than maintaining chaotic wiring all alone</p>
-        </div>
-        <div class="col-sm-4 col-md-4">
-          <span class="glyphicon glyphicon-th-large"></span>
-          <h2>Designer</h2>
-          <p>UI/UX and Graphics</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <h3>Get in touch</h3>
-      <p>email: </p>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
+</header>
