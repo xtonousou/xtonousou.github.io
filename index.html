@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
@@ -7,8 +8,9 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <title>&#128039; Sotirios Roussis &#40;xtonousou&#41;</title>
 </head>
-<body>
 
+<body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-default">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,15 +22,16 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img alt="Logo" src="assets/images/nav-logo.png" width="20" height="20">
+          <img alt="Brand" src="assets/images/nav-logo.png">
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
-        <ul class="nav navbar-nav">
-          <li><a href="#about">Home</a></li>
-          <li><a href="#projects">About</a></li>
+        <ul class="nav nasmar v navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -36,39 +39,85 @@
     <!-- /.container-fluid -->
   </nav>
 
-  <div class="header">
-    <h1>Sotirios M. Roussis (xtonousou)</h1>
-    <h2>I write code</h2>
+  <!-- CAROUSEL -->
+  <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+      <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Hi, I am Sotiris</h1>
+            <p>Sublime Text, IntelliJ, Geany, vim</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Passionate</h1>
+            <p>It is my enthusiasm, my drive and my motivation</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Knowledge Hunter</h1>
+            <p>Always trying to find something new to learn.
+              <br>
+              <small>I know that I know nothing &#8210; Trial of Socrates</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
+  <!-- MARKETING COLUMNS -->
+  <div class="marketing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <span class="glyphicon glyphicon-globe"></span>
+          <h2>Full Stack Developer</h2>
+          <p>Comfortable with working with all the important technologies</p>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <span class="glyphicon glyphicon-cog"></span>
+          <h2>System Administrator</h2>
+          <p>Pretty much anything other than maintaining chaotic wiring all alone</p>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <span class="glyphicon glyphicon-th-large"></span>
+          <h2>Designer</h2>
+          <p>UI/UX and Graphics</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
-
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h3>Get in touch</h3>
+      <p>email: </p>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
 </html>

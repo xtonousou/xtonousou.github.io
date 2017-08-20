@@ -5,6 +5,16 @@
   margin-bottom: 0;
 }
 
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+
 /* CUSTOMIZED CAROUSEL
 -------------------------------------------------- */
 
