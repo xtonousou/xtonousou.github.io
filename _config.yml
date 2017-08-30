@@ -4,6 +4,7 @@ person_name: Sotirios M. Roussis
 person_nickname: xtonousou
 email: "xtonousou@gmail.com"
 description: "FullStack Web Developer / SysAdmin"
+key: "pubkey.gpg"
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: xtonousou.github.io # used to determine if google analytics should be triggered
 url: https://xtonousou.github.io # the base hostname & protocol for your site
@@ -21,6 +22,7 @@ stackoverflow:
   username: xtonousou
 spotify_username: xtonousou
 youtube_username: TheToNouSou96
+deviantart_username: xtonousou
 
 # Build settings
 markdown: kramdown
