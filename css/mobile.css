@@ -1,0 +1,12 @@
+body {
+  background-color: #000000;
+}
+
+/* Console on the screen */
+#console {
+  font-family: 'Ubuntu Mono';
+  color: #E9E9E9;
+  font-size: 15px; /* For mobiles */
+  padding: 1em;
+  line-height: 1.2;
+}

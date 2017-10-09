@@ -1,0 +1,14 @@
+<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span><!-- 5l33p5l33p -->ls <!-- 5l33p5l33p -->-laF
+total 40
+drwxr-xr-- 2 xtonousou xtonousou 4096 Feb 24 23:22 <a id="cdc1" onclick="Typer.append('cd ./')">./</a>
+drwxr-xr-- 9 xtonousou xtonousou 4096 Feb 24 23:37 <a id="cdc2" onclick="Typer.append('cd ../')">../</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;27 Feb 24 23:22 <a id="cm" onclick="Typer.append('$BROWSER mailto:xtonousou@gmail.com')">email</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;35 Feb 24 22:25 <a id="cf" onclick="Typer.append('$BROWSER facebook.com')">facebook</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;29 Feb 24 22:26 <a id="cg" onclick="Typer.append('$BROWSER github.com')">github</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;29 Sat 22 20:14 <a id="ckb" onclick="Typer.append('$BROWSER keybase.com')">keybase</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;33 Feb 24 23:12 <a id="csc" onclick="Typer.append('$BROWSER soundcloud.com')">soundcloud</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;40 Feb 24 23:10 <a id="cs" onclick="Typer.append('$BROWSER spotify.com')">spotify</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;49 Feb 24 23:19 <a id="cso" onclick="Typer.append('$BROWSER stackoverflow.com')">stackoverflow</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;30 Feb 24 22:26 <a id="ct" onclick="Typer.append('$BROWSER twitter.com')">twitter</a>
+-rw-r--r-- 1 xtonousou xtonousou &nbsp;&nbsp;57 Feb 24 22:37 <a id="cy" onclick="Typer.append('$BROWSER youtube.com')">youtube</a>
+<span id="u">xtonousou</span>:<span id="d">~/contact</span><span id="s">$ </span>

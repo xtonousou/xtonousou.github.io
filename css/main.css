@@ -1,0 +1,64 @@
+body {
+  background-color: #E7E7E7;
+}
+
+a {
+  color: #C2C2C2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #12B412;
+  text-decoration: underline;
+}
+
+b {
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+#u {
+  color: #FF4B14;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#d {
+  color: #FF5CBC;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#s {
+  color: #50E27E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#hpk:hover {
+  color: #FFDD32;
+  text-decoration: none;
+}
+
+/* Color for directories and pseudo-directories */
+#cdh1, #cdh2, #cdh3,
+#cdb1, #cdb2,
+#cdc1, #cdc2,
+#cdp1, #cdp2,
+#pa, #pcf, #pga, #pgrk, #ppe, #ps,
+#psh, #pxgs, #pxs {
+  color: #0F74B8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hover color for directories and pseudo-directories */
+#cdh1:hover, #cdh2:hover, #cdh3:hover,
+#cdb1:hover, #cdb2:hover,
+#cdc1:hover, #cdc2:hover,
+#cdp1:hover, #cdp2:hover,
+#pa:hover, #pcf:hover, #pga:hover, #pgrk:hover, #ppe:hover, #ps:hover,
+#psh:hover, #pxgs:hover, #pxs:hover {
+  color: #32FFFF;
+  text-decoration: underline;
+}
