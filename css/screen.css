@@ -1,0 +1,130 @@
+/* Console on the screen */
+#console {
+  font-family: 'Ubuntu Mono';
+  color: #E9E9E9;
+  font-size: 36px; /* For 4K */
+  padding: 1em;
+  line-height: 1.2;
+}
+
+/* The container that defines the dimenions of the monitor - used in media queries */
+/* 4K */
+.container {
+  width: 2400px;
+  height: 1400px;
+  margin: 0 auto;
+}
+
+/* Black monitor outline */
+.monitor {
+  padding: 4%;
+  position: relative;
+  background: #333333;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Camera on top of the monitor */
+.monitor:before {
+  content: '';
+  display: block;
+  background: #9E9E9E;
+  position: absolute;
+  padding: 0.8%;
+  margin-right: -0.4%;
+  border-radius: 15%;
+  right: 50%;
+  top: 1.8%;
+}
+
+/* Power button on the bottom of monitor */
+.monitor:after {
+  content: '';
+  display: block;
+  background: #E3413D;
+  position: absolute;
+  padding: 1%;
+  border-radius: 50%;
+  right: 4%;
+  bottom: 1.5%;
+}
+
+/* The container of the content */
+.screen {
+  height: 100%;
+  overflow: hidden; /* so that scroll bar is hidden */
+}
+
+/* Scrollable section inside the screen */
+.content {
+  background-color: #000000;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  height: 88%;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 6%;
+  width: 4%;
+}
+
+/* Stand */
+.monitor-stand {
+  position: relative;
+  margin: 0 auto;
+  height: 10%;
+  width: 20%;
+  background: #333333;
+}
+
+/* Shadow on stand - have to set manually since border-top doesn't support % :( */
+.monitor-stand {
+  border-top: 10px solid #4E4E4E;
+}
+
+/* Bottom of stand */
+.monitor-stand:after {
+  content: '';
+  position: absolute;
+  background: #272727;
+  height: 20%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: 29%;
+  border-radius: 5px;
+}
+
+/* 1920px and less ------------------------------ */
+@media (max-width: 1920px) {
+
+  .container {
+    width: 1195px;
+    height: 695px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 18px;
+  }
+}
+
+/* 1366px and less ------------------------------ */
+@media (max-width: 1366px) {
+
+  .container {
+    width: 897px;
+    height: 521px;
+  }
+
+  /* Console on the screen */
+  #console {
+    font-size: 15px;
+  }
+}
+
