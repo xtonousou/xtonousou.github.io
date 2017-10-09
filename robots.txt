@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /css
-Disallow: /js
-Disallow: /txts
-Disallow: /imgs
-Disallow: /*.md

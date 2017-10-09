@@ -1,0 +1,51 @@
+have_library: checking for main() in -lc... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-2.4.0/x86_64-linux -I/usr/include/ruby-2.4.0/ruby/backward -I/usr/include/ruby-2.4.0 -I. -D_FORTIFY_SOURCE=2   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fPIC -O0 -Wall  conftest.c  -L. -L/usr/lib -L. -Wl,-O1,--sort-common,--as-needed,-z,relro -fstack-protector -rdynamic -Wl,-export-dynamic     -lruby  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+In file included from /usr/include/bits/libc-header-start.h:33:0,
+                 from /usr/include/stdio.h:28,
+                 from /usr/include/ruby-2.4.0/ruby/defines.h:101,
+                 from /usr/include/ruby-2.4.0/ruby/ruby.h:36,
+                 from /usr/include/ruby-2.4.0/ruby.h:33,
+                 from conftest.c:1:
+/usr/include/features.h:373:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+ #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+    ^~~~~~~
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-2.4.0/x86_64-linux -I/usr/include/ruby-2.4.0/ruby/backward -I/usr/include/ruby-2.4.0 -I. -D_FORTIFY_SOURCE=2   -march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fPIC -O0 -Wall  conftest.c  -L. -L/usr/lib -L. -Wl,-O1,--sort-common,--as-needed,-z,relro -fstack-protector -rdynamic -Wl,-export-dynamic     -lruby -lc  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+In file included from /usr/include/bits/libc-header-start.h:33:0,
+                 from /usr/include/stdio.h:28,
+                 from /usr/include/ruby-2.4.0/ruby/defines.h:101,
+                 from /usr/include/ruby-2.4.0/ruby/ruby.h:36,
+                 from /usr/include/ruby-2.4.0/ruby.h:33,
+                 from conftest.c:1:
+/usr/include/features.h:373:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+ #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+    ^~~~~~~
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return !p; }
+/* end */
+
+--------------------
+

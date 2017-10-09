@@ -1,0 +1,16 @@
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/fast-stemmer-1.0.2/ext
+/usr/bin/ruby -r ./siteconf20170820-11885-mtq6r.rb extconf.rb
+creating Makefile
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR=" clean
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR="
+compiling porter.c
+compiling porter_wrap.c
+linking shared-object stemmer.so
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/fast-stemmer-1.0.2/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 stemmer.so ./.gem.20170820-11885-50iqdh

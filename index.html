@@ -1,33 +1,45 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Sotirios M. Roussis a.k.a. xToNouSou, portfolio">
-    
-    <title>/home/xtonousou</title>
+---
+layout: default
+---
+<header class="site-header">
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="particles.min.js"></script>
+  <script type="text/javascript">
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js loaded - callback');
+      });
+  </script>
+  <div class="site-header-container">
+    <img class="site-avatar" src="{{ "img/me.png" | prepend: site.baseurl }}">
+    <span class="content">
+      <span class="site-title">
+        <span class="site-name">{{ site.person_name }}</span>
+        <span class="site-nickname">({{ site.person_nickname }})</span>
+        <span class="site-description">{{ site.description }}</span>
+      </span>
+      <div class="site-links">
+        <a href="{{ site.key }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'public key', this.href]);"><i class="fa fa-key"></i><span class="link-text">public key</span></a>
 
-    <script type="text/javascript" src="/js/mobile.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/typer.js"></script>
-    <script type="text/javascript">initTyper(7,'/txts/home.txt', 15);</script>
+        <a href="mailto:{{ site.email }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'email', this.href]);"><i class="fa fa-envelope"></i><span class="link-text">email</span></a>
+        <!--
+        <a href="https://facebook.com/{{ site.facebook_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'facebook', this.href]);"><i class="fa fa-facebook"></i><span class="link-text">facebook</span></a>
+        -->
+        <a href="https://twitter.com/{{ site.twitter_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'twitter', this.href]);"><i class="fa fa-twitter"></i><span class="link-text">twitter</span></a>
+        <!--
+        <a href="https://youtube.com/user/{{ site.youtube_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'youtube', this.href]);"><i class="fa fa-youtube"></i><span class="link-text">youtube</span></a>
+        -->
+        <a href="https://open.spotify.com/user/{{ site.spotify_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'spotify', this.href]);"><i class="fa fa-spotify"></i><span class="link-text">spotify</span></a>
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"/>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/screen.css"/>
-    
-    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico"/>
-  </head>
-  <body>
-    <div class="container">
-      <div class="monitor">
-        <div class="screen">
-          <div class="content">
-            <div id="console"></div>
-          </div>
-        </div>
-      </div><div class="monitor-stand"></div>
-    </div>
-  </body>
-</html>
+        <a href="https://{{ site.deviantart_username }}.deviantart.com/" onclick="_gaq.push(['_trackEvent', 'linkTo', 'deviantart', this.href]);"><i class="fa fa-deviantart"></i><span class="link-text">deviantart</span></a>
+        
+        <a href="https://github.com/{{ site.github_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'github', this.href]);"><i class="fa fa-github"></i><span class="link-text">github</span></a>
+        
+        <a href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'stackoverflow', this.href]);"><i class="fa fa-stack-overflow"></i><span class="link-text">stackoverflow</span></a>
+        <!--
+        <a href="{{ site.vcard_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'resume', this.href]);"><i class="fa fa-user"></i><span class="link-text">vcard</span></a>
+        <a href="{{ site.cv_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'vcard', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv (pdf)</span></a>
+        -->
+      </div>
+    </span>
+  </div>
+</header>

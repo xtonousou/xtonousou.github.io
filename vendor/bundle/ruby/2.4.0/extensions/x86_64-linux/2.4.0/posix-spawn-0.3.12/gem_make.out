@@ -1,0 +1,15 @@
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/posix-spawn-0.3.12/ext
+/usr/bin/ruby -r ./siteconf20170820-11885-17phr1h.rb extconf.rb
+creating Makefile
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/posix-spawn-0.3.12/ext
+make "DESTDIR=" clean
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/posix-spawn-0.3.12/ext
+make "DESTDIR="
+compiling posix-spawn.c
+linking shared-object posix_spawn_ext.so
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/posix-spawn-0.3.12/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 posix_spawn_ext.so ./.gem.20170820-11885-1p6uszo
