@@ -1,0 +1,27 @@
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/yajl-ruby-1.2.2/ext/yajl
+/usr/bin/ruby -r ./siteconf20170820-8286-z0r580.rb extconf.rb
+creating Makefile
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/yajl-ruby-1.2.2/ext/yajl
+make "DESTDIR=" clean
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/yajl-ruby-1.2.2/ext/yajl
+make "DESTDIR="
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+yajl_ext.c: In function ‘rb_yajl_parser_parse’:
+yajl_ext.c:471:17: warning: variable ‘stat’ set but not used [-Wunused-but-set-variable]
+     yajl_status stat;
+                 ^~~~
+compiling yajl_gen.c
+compiling yajl_lex.c
+compiling yajl_parser.c
+compiling yajl_version.c
+linking shared-object yajl/yajl.so
+
+current directory: /home/xtonousou/documents/projects/xtonousou.github.io/vendor/bundle/ruby/2.4.0/gems/yajl-ruby-1.2.2/ext/yajl
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 yajl.so ./.gem.20170820-8286-1ub49pe/yajl
