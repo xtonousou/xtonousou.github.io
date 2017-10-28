@@ -35,6 +35,8 @@ layout: default
         <a href="https://github.com/{{ site.github_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'github', this.href]);"><i class="fa fa-github"></i><span class="link-text">github</span></a>
         
         <a href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'stackoverflow', this.href]);"><i class="fa fa-stack-overflow"></i><span class="link-text">stackoverflow</span></a>
+
+        <a href="{{ site.cv }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'cv', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv</span></a>
         <!--
         <a href="{{ site.vcard_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'resume', this.href]);"><i class="fa fa-user"></i><span class="link-text">vcard</span></a>
         <a href="{{ site.cv_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'vcard', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv (pdf)</span></a>

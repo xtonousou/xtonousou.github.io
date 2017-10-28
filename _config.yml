@@ -5,6 +5,7 @@ person_nickname: xtonousou
 email: "xtonousou@gmail.com"
 description: "FullStack Web Developer / SysAdmin / Google-fu Expert"
 key: "pubkey.gpg"
+cv: "cv.pdf"
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: xtonousou.github.io # used to determine if google analytics should be triggered
 url: https://xtonousou.github.io # the base hostname & protocol for your site
