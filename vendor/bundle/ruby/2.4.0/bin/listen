@@ -19,4 +19,9 @@ if ARGV.first
   end
 end
 
+if Gem.respond_to?(:activate_bin_path)
 load Gem.activate_bin_path('listen', 'listen', version)
+else
+gem "listen", version
+load Gem.bin_path("listen", "listen", version)
+end
