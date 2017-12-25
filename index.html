@@ -2,7 +2,6 @@
 layout: default
 ---
 <header class="site-header">
-  <div id="particles-js"></div>
   <script type="text/javascript" src="particles.min.js"></script>
   <script type="text/javascript">
       particlesJS.load('particles-js', 'particles.json', function() {
@@ -36,6 +35,8 @@ layout: default
         
         <a href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'stackoverflow', this.href]);"><i class="fa fa-stack-overflow"></i><span class="link-text">stackoverflow</span></a>
 
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" onclick="_gaq.push(['_trackEvent', 'linkTo', 'linkedin', this.href]);"><i class="fa fa-linkedin"></i><span class="link-text">linkedin</span></a>
+
         <a href="{{ site.cv }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'cv', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv</span></a>
         <!--
         <a href="{{ site.vcard_url }}" onclick="_gaq.push(['_trackEvent', 'download', 'resume', this.href]);"><i class="fa fa-user"></i><span class="link-text">vcard</span></a>
@@ -44,4 +45,5 @@ layout: default
       </div>
     </span>
   </div>
+  <div id="particles-js"></div>
 </header>

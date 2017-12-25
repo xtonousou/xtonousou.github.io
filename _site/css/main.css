@@ -1,0 +1,297 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styling
+ */
+html {
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  height: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 15px; }
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 12.25px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+/**
+ * Links
+ */
+a {
+  color: #1193f6;
+  text-decoration: none; }
+  a:visited {
+    color: #0877cc; }
+  a:hover {
+    color: #424242;
+    text-decoration: underline; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Clearfix
+ */
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+.site-header {
+  font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  bottom: 0px;
+  width: 100%; }
+  .site-header a:hover {
+    text-decoration: none; }
+  .site-header .site-header-container {
+    width: 585px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.site-avatar {
+  width: 128px;
+  height: 128px;
+  float: left;
+  border: 2px solid white;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  -ms-border-radius: 400px;
+  border-radius: 400px;
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3); }
+
+.content {
+  display: block;
+  padding: 9px 0px 0px 160px;
+  position: relative;
+  text-align: left; }
+
+.site-title {
+  font-size: 47px;
+  position: relative; }
+  .site-title .site-name {
+    color: #424242;
+    text-transform: uppercase; }
+  .site-title .site-nickname {
+    color: #d9d9d9;
+    text-transform: lowercase; }
+  .site-title .site-description {
+    font-size: 14px;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    position: absolute;
+    top: 49px;
+    left: 5px; }
+
+.site-links {
+  font-size: 22px;
+  padding: 2px 0px 0px 6px; }
+  .site-links a {
+    float: left;
+    color: silver;
+    position: relative;
+    padding: 0px 7px;
+    white-space: nowrap; }
+    .site-links a .link-text {
+      visibility: hidden;
+      font-size: 14px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      -moz-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%); }
+    .site-links a:hover {
+      color: #42a9f8; }
+      .site-links a:hover .link-text {
+        visibility: visible; }
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background: #111111; }
+
+@media screen and (max-width: 768px) {
+  .site-links {
+    padding: 1px 0px 0px 0px;
+    margin-left: -2px; }
+    .site-links a {
+      float: none;
+      line-height: 22px;
+      padding: 0px;
+      margin: 0px 10px 0px 0px; }
+      .site-links a .link-text {
+        margin-left: 4px;
+        visibility: visible;
+        position: static;
+        display: inline-block;
+        -moz-transform: translate(0%, -11%);
+        -o-transform: translate(0%, -11%);
+        -ms-transform: translate(0%, -11%);
+        -webkit-transform: translate(0%, -11%);
+        transform: translate(0%, -11%); } }
+@media screen and (max-width: 615px) {
+  .site-header .site-header-container {
+    width: 410px; }
+
+  .site-avatar {
+    width: 80px;
+    height: 80px; }
+
+  .content {
+    padding: 4px 0px 0px 98px; }
+
+  .site-title {
+    font-size: 34px; }
+    .site-title .site-description {
+      font-size: 10px;
+      top: 36px;
+      left: 5px; }
+
+  .site-links {
+    font-size: 16px; }
+    .site-links a .link-text {
+      -moz-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%); } }
+@media screen and (max-width: 419px) {
+  .site-header .site-header-container {
+    width: 320px; }
+
+  .site-avatar {
+    width: 80px;
+    height: 80px;
+    float: none; }
+
+  .content {
+    padding: 0px 10px 0px 10px;
+    text-align: center; }
+
+  .site-title {
+    font-size: 30px; }
+    .site-title .site-description {
+      font-size: 9px;
+      top: 32px;
+      left: 5px; }
+
+  .site-links {
+    font-size: 14px;
+    padding: 3px 0px 0px 0px;
+    margin-left: 0px;
+    text-align: center; }
+    .site-links a {
+      padding: 0px;
+      margin: 0px 5px; }
+      .site-links a .link-text {
+        -moz-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        transform: translate(0%, 0%); } }

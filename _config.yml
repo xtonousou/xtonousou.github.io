@@ -1,5 +1,5 @@
 # Site settings
-title: 😾💻 (xtonousou)
+title: (xtonousou)
 person_name: Sotirios M. Roussis
 person_nickname: xtonousou
 email: "xtonousou@gmail.com"
@@ -24,6 +24,8 @@ stackoverflow:
 spotify_username: xtonousou
 youtube_username: TheToNouSou96
 deviantart_username: xtonousou
+linkedin_username: sotirios-roussis-xtonousou
+
 
 # Build settings
 markdown: kramdown
