@@ -22,10 +22,12 @@
 }
 
 .site-avatar {
-  width: 128px;
-  height: 128px;
+  width: 144px;
+  height: 144px;
   float: left;
-  border: 2px solid white;
+  border: 2px solid transparent;
+  border-left: 4px solid red;
+  border-right: 4px solid red;
   @include border-radius(400px);
   @include box-shadow(0px, 0px, 7px, rgba(0, 0, 0, 0.3));
 }
@@ -43,7 +45,6 @@
 
   .site-name {
     color: $name-color;
-    text-transform: uppercase;
   }
 
   .site-nickname {
@@ -54,7 +55,6 @@
   .site-description {
     font-size: 14px;
     color: $sub-title-color;
-    text-transform: uppercase;
     position: absolute;
     top: 49px;
     left: 5px;

@@ -5,7 +5,7 @@ $base-font-family:    'Open Sans', Helvetica, Arial, sans-serif;
 $base-font-size:      14px;
 $heading-font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
 $small-font-size:     $base-font-size * 0.875;
-$base-line-height:    1.5;
+$base-line-height:    1.33;
 
 $spacing-unit:        30px;
 
@@ -17,7 +17,7 @@ $nickname-color:      lighten($text-color, 75%);
 $sub-title-color:     lighten($text-color, 55%);
 $link-color:          lighten($text-color, 65%);
 
-$brand-color:         #1193f6;
+$brand-color:         #F61811;
 $brand-color-light:   lighten($brand-color, 10%);
 $brand-color-dark:    darken($brand-color, 10%);
 

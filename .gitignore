@@ -1,2 +1,13 @@
 vendor/
-
+.sass-cache/
+_site
+_posts/_draft
+_posts/_archive
+_archive
+node_modules
+.vscode
+*.log
+*.sh
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store

@@ -1,11 +1,9 @@
 # Site settings
 title: "Sotirios Roussis"
-person_name: Sotirios M. Roussis
+person_name: Sotirios Roussis
 person_nickname: xtonousou
-email: "xtonousou@gmail.com"
-description: "IT Specialist"
-key: "pubkey.gpg"
-cv: "cv.pdf"
+email: "xtonousou@protonmail.com"
+description: "Systems & Software Engineer"
 baseurl: "" # the subpath of your site, e.g. /blog/
 hostname: xtonousou.github.io # used to determine if google analytics should be triggered
 url: https://xtonousou.github.io # the base hostname & protocol for your site
@@ -14,16 +12,18 @@ exclude: [vendor] # avoid irritating errors
 
 #vcard_url: url_here
 facebook_username: xtonousou
-twitter_username: xtonousou
+#twitter_username: xtonousou
 github_username: xtonousou
 stackoverflow:
   id: 4946732
   username: xtonousou
-spotify_username: xtonousou
+#spotify_username: xtonousou
 #youtube_username: TheToNouSou96
-deviantart_username: xtonousou
+#deviantart_username: xtonousou
 linkedin_username: xtonousou
-
+hackthebox:
+  id: 193038
+  username: xtonousou
 
 # Build settings
 markdown: kramdown

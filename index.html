@@ -9,21 +9,20 @@ layout: default
       });
   </script>
   <div class="site-header-container">
-    <img class="site-avatar" src="{{ "img/me.png" | prepend: site.baseurl }}">
+    <img class="site-avatar" src="{{ "/img/me.jpg" | prepend: site.baseurl }}">
     <span class="content">
       <span class="site-title">
         <span class="site-name">{{ site.person_name }}</span>
-        <span class="site-nickname">({{ site.person_nickname }})</span>
         <span class="site-description">{{ site.description }}</span>
       </span>
-      <div class="site-links">
-        <a href="{{ site.key }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'public key', this.href]);"><i class="fa fa-key"></i><span class="link-text">public key</span></a>
+      </br></br>
+      <span class="site-links">
+        <img align="left" src="https://www.hackthebox.eu/badge/image/{{ site.hackthebox.id }}" alt="Hack The Box">
+        </br></br>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225.5" height="28"><g shape-rendering="crispEdges"><path fill="#555" d="M0 0h132.5v28H0z"/><path fill="#dd4a39" d="M132.5 0h93v28H132.5z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="100"> <text x="662.5" y="175" transform="scale(.1)" textLength="1085">HOUSE OF ARBS</text><text x="1790" y="175" font-weight="bold" transform="scale(.1)" textLength="690">REGISTER</text></g><a target="_blank" xlink:href="http://houseofarbs.com"><path fill="rgba(0,0,0,0)" d="M0 0h132.5v28H0z"/></a> <a target="_blank" xlink:href="http://backend.houseofarbs.com/clientarea.php"><path fill="rgba(0,0,0,0)" d="M132.5 0h93v28H132.5z"/></a></svg>
+        </br>
 
         <a href="mailto:{{ site.email }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'email', this.href]);"><i class="fa fa-envelope"></i><span class="link-text">email</span></a>
-        
-        <a href="https://facebook.com/{{ site.facebook_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'facebook', this.href]);"><i class="fa fa-facebook"></i><span class="link-text">facebook</span></a>
-        
-        <a href="https://twitter.com/{{ site.twitter_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'twitter', this.href]);"><i class="fa fa-twitter"></i><span class="link-text">twitter</span></a>
 
         <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" onclick="_gaq.push(['_trackEvent', 'linkTo', 'linkedin', this.href]);"><i class="fa fa-linkedin"></i><span class="link-text">linkedin</span></a>
 
@@ -31,12 +30,8 @@ layout: default
 
         <a href="https://stackoverflow.com/users/{{ site.stackoverflow.id }}/{{ site.stackoverflow.username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'stackoverflow', this.href]);"><i class="fa fa-stack-overflow"></i><span class="link-text">stackoverflow</span></a>
 
-        <a href="https://{{ site.deviantart_username }}.deviantart.com/" onclick="_gaq.push(['_trackEvent', 'linkTo', 'deviantart', this.href]);"><i class="fa fa-deviantart"></i><span class="link-text">deviantart</span></a>
-        
-        <a href="https://open.spotify.com/user/{{ site.spotify_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'spotify', this.href]);"><i class="fa fa-spotify"></i><span class="link-text">spotify</span></a>
-
-        <a href="{{ site.cv }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'cv', this.href]);"><i class="fa fa-file-text-o"></i><span class="link-text">cv</span></a>
-      </div>
+        <a href="https://facebook.com/{{ site.facebook_username }}" onclick="_gaq.push(['_trackEvent', 'linkTo', 'facebook', this.href]);"><i class="fa fa-facebook"></i><span class="link-text">facebook</span></a>
+      </span>
     </span>
   </div>
   <div id="particles-js"></div>

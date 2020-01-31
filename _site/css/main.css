@@ -23,7 +23,7 @@ body {
   height: 100%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.33;
   font-weight: 400;
   color: #1a1a1a;
   background-color: #fdfdfd;
@@ -73,10 +73,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #1193f6;
+  color: #F61811;
   text-decoration: none; }
   a:visited {
-    color: #0877cc; }
+    color: #cc0e08; }
   a:hover {
     color: #424242;
     text-decoration: underline; }
@@ -151,10 +151,12 @@ pre {
     transform: translate(-50%, -50%); }
 
 .site-avatar {
-  width: 128px;
-  height: 128px;
+  width: 144px;
+  height: 144px;
   float: left;
-  border: 2px solid white;
+  border: 2px solid transparent;
+  border-left: 4px solid red;
+  border-right: 4px solid red;
   -webkit-border-radius: 400px;
   -moz-border-radius: 400px;
   -ms-border-radius: 400px;
@@ -173,15 +175,13 @@ pre {
   font-size: 47px;
   position: relative; }
   .site-title .site-name {
-    color: #424242;
-    text-transform: uppercase; }
+    color: #424242; }
   .site-title .site-nickname {
     color: #d9d9d9;
     text-transform: lowercase; }
   .site-title .site-description {
     font-size: 14px;
     color: #a6a6a6;
-    text-transform: uppercase;
     position: absolute;
     top: 49px;
     left: 5px; }
@@ -207,7 +207,7 @@ pre {
       -webkit-transform: translate(-50%, 0%);
       transform: translate(-50%, 0%); }
     .site-links a:hover {
-      color: #42a9f8; }
+      color: #f84842; }
       .site-links a:hover .link-text {
         visibility: visible; }
 
