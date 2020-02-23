@@ -23,7 +23,6 @@ stackoverflow:
 linkedin_username: xtonousou
 hackthebox:
   id: 193038
-  username: xtonousou
 
 # Build settings
 markdown: kramdown
